@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -186,7 +186,7 @@
 <vertex x="36.449" y="38.862"/>
 <vertex x="11.938" y="38.862"/>
 </polygon>
-<text x="0.635" y="11.684" size="1.27" layer="1" font="vector" ratio="15" rot="SR270">x01</text>
+<text x="4.445" y="39.624" size="1.27" layer="1" font="vector" ratio="15" rot="SR270">x01</text>
 <text x="22.098" y="17.907" size="0.508" layer="27" font="vector" ratio="15" align="center">RFM69 
 or
 RFM95W</text>
@@ -201,10 +201,6 @@ RFM95W</text>
 <text x="51.054" y="9.779" size="1.27" layer="21" font="vector" ratio="15">+</text>
 <text x="51.054" y="4.064" size="1.27" layer="21" font="vector" ratio="15">-</text>
 <text x="69.85" y="-25.4" size="1.778" layer="52" font="vector" ratio="15" rot="MR0" align="center">0.8mm Board Thickness</text>
-<wire x1="91.44" y1="5.08" x2="91.44" y2="14.732" width="0.1524" layer="21"/>
-<wire x1="91.44" y1="14.732" x2="96.52" y2="14.732" width="0.1524" layer="21"/>
-<wire x1="96.52" y1="14.732" x2="96.52" y2="5.08" width="0.1524" layer="21"/>
-<wire x1="96.52" y1="5.08" x2="91.44" y2="5.08" width="0.1524" layer="21"/>
 <text x="22.098" y="-11.049" size="1.778" layer="52" font="vector" ratio="15" rot="MR180">Owen Lyke</text>
 <polygon width="0.1524" layer="22">
 <vertex x="33.655" y="39.497"/>
@@ -232,6 +228,11 @@ RFM95W</text>
 <wire x1="53.34" y1="3.81" x2="50.8" y2="1.27" width="0.1524" layer="20" curve="-90"/>
 <wire x1="50.8" y1="1.27" x2="41.91" y2="1.27" width="0.1524" layer="20"/>
 <hole x="10.16" y="39.37" drill="1.7"/>
+<wire x1="37.8968" y1="37.5412" x2="46.9392" y2="37.5412" width="0.1524" layer="21"/>
+<wire x1="46.9392" y1="37.5412" x2="47.3964" y2="37.084" width="0.1524" layer="21" curve="-90"/>
+<wire x1="47.3964" y1="37.084" x2="47.3964" y2="35.56" width="0.1524" layer="21"/>
+<wire x1="47.3964" y1="35.56" x2="46.9392" y2="35.1028" width="0.1524" layer="21" curve="-90"/>
+<wire x1="46.9392" y1="35.1028" x2="37.8714" y2="35.1028" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -9575,7 +9576,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$28" library="buzzard_labels (25)" package="RST2" value="" x="47.371" y="35.433" smashed="yes" rot="MR0"/>
 <element name="U$29" library="buzzard_labels (25)" package="BATT25" value="" x="43.688" y="5.461" smashed="yes" rot="MR90"/>
 <element name="U$32" library="buzzard_labels (25)" package="BATT25" value="" x="43.053" y="13.208" rot="MR90"/>
-<element name="U$36" library="buzzard_labels (25)" package="RST2" value="" x="44.069" y="35.433"/>
+<element name="U$36" library="buzzard_labels (25)" package="RST2" value="" x="44.069" y="38.735"/>
 <element name="U$37" library="buzzard_labels (25)" package="SWITCH23" value="" x="81.661" y="3.937" rot="R270"/>
 <element name="U$38" library="buzzard_labels (25)" package="GND0" value="" x="35.941" y="39.37"/>
 <element name="U$39" library="buzzard_labels (28)" package="ON#OFF0" value="" x="42.926" y="1.905"/>
@@ -9623,8 +9624,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$17" library="buzzard_labels (25)" package="GND0" value="" x="10.922" y="4.953" smashed="yes" rot="R270"/>
 <element name="U$19" library="buzzard_labels (8)" package="RX2" value="" x="11.176" y="5.334"/>
 <element name="U$57" library="buzzard_labels (8)" package="TX3" value="" x="13.716" y="5.334"/>
-<element name="U$25" library="buzzard_labels (3)" package="LORA0" value="" x="59.436" y="24.638" rot="MR90"/>
-<element name="U$35" library="buzzard_labels (3)" package="WAN1" value="" x="70.231" y="5.207"/>
+<element name="U$25" library="buzzard_labels (3)" package="LORA0" value="" x="1.27" y="10.795" rot="R270"/>
+<element name="U$35" library="buzzard_labels (3)" package="WAN1" value="" x="1.27" y="6.985" rot="R270"/>
 <element name="U$26" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="SPECIAL_INSTRUCTIONS-ORDERING" x="87.63" y="-13.97" rot="MR0"/>
 <element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="50.8" y="3.81"/>
 <element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="1.27" y="36.83"/>
@@ -9674,13 +9675,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$20" library="D3" package="D30" value="" x="26.67" y="5.334" rot="MR0"/>
 <element name="U$22" library="D4" package="D40" value="" x="29.337" y="5.334" rot="MR0"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-MINI" value="OSHW-LOGOMINI" x="50.8" y="36.703" rot="R270"/>
-<element name="U$34" library="SparkX" package="SPARKX-TINY" value="SPARKX-LOGO2" x="1.27" y="5.08" rot="R270"/>
-<element name="U$30" library="Labels" package="QWIIC-LOGO-MEDIUM" value="" x="6.35" y="5.08" rot="R270"/>
+<element name="U$34" library="SparkX" package="SPARKX-TINY" value="SPARKX-LOGO2" x="2.54" y="31.115" rot="R270"/>
+<element name="U$30" library="Labels" package="QWIIC-LOGO-MEDIUM" value="" x="6.35" y="6.35" rot="R270"/>
 <element name="U$54" library="ANT" package="ANT0" value="" x="9.779" y="33.02" rot="R270"/>
 <element name="U$56" library="ufl" package="U#FL0" value="" x="5.461" y="32.893" rot="R270"/>
 <element name="U$51" library="SparkX" package="SPARKX-MEDIUM" value="" x="27.686" y="20.32" rot="MR90"/>
-<element name="U$58" library="CUTIFRAW" package="CUT_IF_RAW_IN0" value="" x="95.758" y="14.605" rot="R270"/>
-<element name="U$59" library="GREATER" package="GREATER_THAN_5#5V0" value="" x="91.948" y="14.097" rot="R270"/>
+<element name="U$58" library="CUTIFRAW" package="CUT_IF_RAW_IN0" value="" x="38.735" y="36.83"/>
+<element name="U$59" library="GREATER" package="GREATER_THAN_5#5V0" value="" x="39.243" y="35.814"/>
 <element name="U$60" library="Labels" package="QWIIC-TEXT-04" value="" x="63.627" y="16.002" rot="MR0"/>
 <element name="U$61" library="SparkFun-Aesthetics" package="OSHW-LOGO-MINI" value="" x="50.8" y="36.703" rot="MR90"/>
 <element name="R3" library="SparkFun-Resistors" package="0603" value="10k" x="28.194" y="33.02" rot="MR90">
