@@ -14775,9 +14775,9 @@ LoRa WAN compatibility</text>
 <label x="195.58" y="33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="A3"/>
-<wire x1="317.5" y1="182.88" x2="312.42" y2="182.88" width="0.1524" layer="91"/>
-<label x="312.42" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="A2"/>
+<wire x1="317.5" y1="185.42" x2="312.42" y2="185.42" width="0.1524" layer="91"/>
+<label x="312.42" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RXI" class="0">
@@ -15521,9 +15521,9 @@ LoRa WAN compatibility</text>
 <label x="195.58" y="30.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="A2"/>
-<wire x1="317.5" y1="185.42" x2="312.42" y2="185.42" width="0.1524" layer="91"/>
-<label x="312.42" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="A3"/>
+<wire x1="317.5" y1="182.88" x2="312.42" y2="182.88" width="0.1524" layer="91"/>
+<label x="312.42" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -15709,26 +15709,26 @@ LoRa WAN compatibility</text>
 </net>
 <net name="MOSI5V" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="B2"/>
-<wire x1="342.9" y1="185.42" x2="347.98" y2="185.42" width="0.1524" layer="91"/>
-<label x="347.98" y="185.42" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U6" gate="G$1" pin="MOSI"/>
 <wire x1="337.82" y1="241.3" x2="335.28" y2="241.3" width="0.1524" layer="91"/>
 <label x="335.28" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="MISO5V" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="B3"/>
 <wire x1="342.9" y1="182.88" x2="347.98" y2="182.88" width="0.1524" layer="91"/>
 <label x="347.98" y="182.88" size="1.27" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="MISO5V" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="MISO"/>
 <wire x1="337.82" y1="238.76" x2="335.28" y2="238.76" width="0.1524" layer="91"/>
 <label x="335.28" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U8" gate="G$1" pin="B2"/>
+<wire x1="342.9" y1="185.42" x2="347.98" y2="185.42" width="0.1524" layer="91"/>
+<label x="347.98" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!RFM_CS5V" class="0">
@@ -15773,11 +15773,6 @@ LoRa WAN compatibility</text>
 </net>
 <net name="DIO2" class="0">
 <segment>
-<pinref part="U9" gate="G$1" pin="A1"/>
-<wire x1="383.54" y1="187.96" x2="378.46" y2="187.96" width="0.1524" layer="91"/>
-<label x="378.46" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J14" gate="G$1" pin="7"/>
 <wire x1="403.86" y1="238.76" x2="406.4" y2="238.76" width="0.1524" layer="91"/>
 <label x="403.86" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -15787,41 +15782,46 @@ LoRa WAN compatibility</text>
 <wire x1="381" y1="264.16" x2="383.54" y2="264.16" width="0.1524" layer="91"/>
 <label x="381" y="264.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="DIO3" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="A2"/>
-<wire x1="383.54" y1="185.42" x2="378.46" y2="185.42" width="0.1524" layer="91"/>
-<label x="378.46" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J14" gate="G$1" pin="5"/>
-<wire x1="406.4" y1="241.3" x2="403.86" y2="241.3" width="0.1524" layer="91"/>
-<label x="403.86" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="DIO4" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="A3"/>
-<wire x1="383.54" y1="182.88" x2="378.46" y2="182.88" width="0.1524" layer="91"/>
-<label x="378.46" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J14" gate="G$1" pin="3"/>
-<wire x1="403.86" y1="243.84" x2="406.4" y2="243.84" width="0.1524" layer="91"/>
-<label x="403.86" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="DIO5" class="0">
 <segment>
 <pinref part="U9" gate="G$1" pin="A4"/>
 <wire x1="383.54" y1="180.34" x2="378.46" y2="180.34" width="0.1524" layer="91"/>
 <label x="378.46" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+</net>
+<net name="DIO3" class="0">
+<segment>
+<pinref part="J14" gate="G$1" pin="5"/>
+<wire x1="406.4" y1="241.3" x2="403.86" y2="241.3" width="0.1524" layer="91"/>
+<label x="403.86" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U9" gate="G$1" pin="A3"/>
+<wire x1="383.54" y1="182.88" x2="378.46" y2="182.88" width="0.1524" layer="91"/>
+<label x="378.46" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DIO4" class="0">
+<segment>
+<pinref part="J14" gate="G$1" pin="3"/>
+<wire x1="403.86" y1="243.84" x2="406.4" y2="243.84" width="0.1524" layer="91"/>
+<label x="403.86" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U9" gate="G$1" pin="A2"/>
+<wire x1="383.54" y1="185.42" x2="378.46" y2="185.42" width="0.1524" layer="91"/>
+<label x="378.46" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DIO5" class="0">
 <segment>
 <pinref part="J14" gate="G$1" pin="1"/>
 <wire x1="406.4" y1="246.38" x2="403.86" y2="246.38" width="0.1524" layer="91"/>
 <label x="403.86" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U9" gate="G$1" pin="A1"/>
+<wire x1="383.54" y1="187.96" x2="378.46" y2="187.96" width="0.1524" layer="91"/>
+<label x="378.46" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DIO0" class="0">
@@ -15889,9 +15889,9 @@ LoRa WAN compatibility</text>
 <label x="368.3" y="246.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="B4"/>
-<wire x1="414.02" y1="180.34" x2="408.94" y2="180.34" width="0.1524" layer="91"/>
-<label x="414.02" y="180.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="B1"/>
+<wire x1="408.94" y1="187.96" x2="414.02" y2="187.96" width="0.1524" layer="91"/>
+<label x="414.02" y="187.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DIO45V" class="0">
@@ -15901,9 +15901,9 @@ LoRa WAN compatibility</text>
 <label x="368.3" y="243.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="B3"/>
-<wire x1="408.94" y1="182.88" x2="414.02" y2="182.88" width="0.1524" layer="91"/>
-<label x="414.02" y="182.88" size="1.27" layer="95" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="B2"/>
+<wire x1="408.94" y1="185.42" x2="414.02" y2="185.42" width="0.1524" layer="91"/>
+<label x="414.02" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DIO35V" class="0">
@@ -15913,9 +15913,9 @@ LoRa WAN compatibility</text>
 <label x="368.3" y="241.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="B2"/>
-<wire x1="408.94" y1="185.42" x2="414.02" y2="185.42" width="0.1524" layer="91"/>
-<label x="414.02" y="185.42" size="1.27" layer="95" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="B3"/>
+<wire x1="408.94" y1="182.88" x2="414.02" y2="182.88" width="0.1524" layer="91"/>
+<label x="414.02" y="182.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DIO25V" class="0">
@@ -15925,9 +15925,9 @@ LoRa WAN compatibility</text>
 <label x="368.3" y="238.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U9" gate="G$1" pin="B1"/>
-<wire x1="408.94" y1="187.96" x2="414.02" y2="187.96" width="0.1524" layer="91"/>
-<label x="414.02" y="187.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="B4"/>
+<wire x1="414.02" y1="180.34" x2="408.94" y2="180.34" width="0.1524" layer="91"/>
+<label x="414.02" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
