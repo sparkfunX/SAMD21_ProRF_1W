@@ -1,0 +1,21 @@
+1) Is there a SparkFun Logo? [YES]
+comment: SPARKX logo
+
+2) Is the board dimension outline correct thickness? (0.008 inch) [NO]
+comment: 0.006
+
+3) Are opposing 0.1 inch headers spaced to fit into a breadboard? [NO]
+comment: Too wide, 90 degree rotated header section
+
+4) Is the LED color standard followed? (red for power, blue for STAT, green for TX, yellow for RX) [YES]
+comment: Used blue for lipo charge status
+
+5) Does it pass DRC with top/bottom keepout layers on? [NO]
+comment: Approved keepout errors
+
+6) Are there airwires after ratsnest? [YES]
+comment: Antenna, to be routed
+
+7) Is the SparkFun Logo on the board? [YES]
+comment: SparkX
+
