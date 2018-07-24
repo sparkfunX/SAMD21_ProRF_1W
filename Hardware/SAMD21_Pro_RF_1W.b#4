@@ -244,8 +244,8 @@ RFM95W</text>
 <wire x1="11.1633" y1="26.3398" x2="10.2616" y2="26.3398" width="0.0508" layer="51"/>
 <polygon width="0.1524" layer="29">
 <vertex x="13.716" y="27.94"/>
-<vertex x="9.525" y="27.94"/>
-<vertex x="11.176" y="26.289"/>
+<vertex x="9.652" y="27.94"/>
+<vertex x="11.303" y="26.289"/>
 <vertex x="13.716" y="26.289"/>
 </polygon>
 </plain>

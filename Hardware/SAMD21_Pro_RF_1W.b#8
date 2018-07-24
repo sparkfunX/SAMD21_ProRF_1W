@@ -10882,13 +10882,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.67608125" y1="22.67141875" x2="2.9746625" y2="22.97" width="0.1524" layer="16"/>
 <wire x1="1.96758125" y1="28.13141875" x2="1.905" y2="28.194" width="0.1524" layer="16"/>
 <wire x1="2.632" y1="22.7" x2="2.632" y2="24.3375" width="0.1524" layer="1"/>
-<polygon width="0.2032" layer="16" isolate="0.2032">
+<polygon width="0.2032" layer="16" isolate="0.2032" thermals="no">
 <vertex x="5.842" y="29.972"/>
 <vertex x="0" y="29.972"/>
 <vertex x="0" y="21.082"/>
 <vertex x="5.842" y="21.082"/>
 </polygon>
-<polygon width="0.2032" layer="1" isolate="0.2032">
+<polygon width="0.2032" layer="1" isolate="0.2032" thermals="no">
 <vertex x="0" y="29.972"/>
 <vertex x="5.842" y="29.972"/>
 <vertex x="5.842" y="21.082"/>
