@@ -9533,7 +9533,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="24.9147375" y1="10.4367375" x2="34.0132625" y2="10.4367375" width="0.6096" layer="16"/>
 <contactref element="U3" pad="5"/>
 <contactref element="R12" pad="2"/>
-<wire x1="-42.733" y1="-60.1679" x2="-41.06" y2="-96.774" width="0" layer="19" extent="1-1"/>
+<contactref element="Q1" pad="1"/>
+<wire x1="-43.068" y1="-91.984" x2="-41.06" y2="-96.774" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.733" y1="-60.1679" x2="-43.068" y2="-91.984" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="3.81" x2="-42.733" y2="-60.1679" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D+">

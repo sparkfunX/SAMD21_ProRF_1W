@@ -40,7 +40,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
@@ -233,8 +233,8 @@ RFM95W</text>
 <wire x1="5.9436" y1="37.084" x2="5.9436" y2="35.56" width="0.1524" layer="22"/>
 <wire x1="5.9436" y1="35.56" x2="6.4008" y2="35.1028" width="0.1524" layer="22" curve="90"/>
 <wire x1="6.4008" y1="35.1028" x2="15.4686" y2="35.1028" width="0.1524" layer="22"/>
-<text x="11.049" y="15.748" size="1.27" layer="21" font="vector" ratio="15">+</text>
-<text x="12.192" y="14.605" size="1.27" layer="21" font="vector" ratio="15" rot="R90">-</text>
+<text x="8.89" y="17.78" size="1.27" layer="21" font="vector" ratio="15">+</text>
+<text x="10.033" y="11.557" size="1.27" layer="21" font="vector" ratio="15" rot="R90">-</text>
 <wire x1="43.9801" y1="26.3398" x2="43.0784" y2="26.3398" width="0.0508" layer="52"/>
 <wire x1="43.0784" y1="26.3398" x2="43.0784" y2="27.2415" width="0.0508" layer="52"/>
 <wire x1="43.0784" y1="27.2415" x2="43.9801" y2="27.2415" width="0.0508" layer="52"/>
@@ -8579,7 +8579,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$24" library="buzzard_labels (25)" package="RAW21" value="" x="16.002" y="5.334" smashed="yes"/>
 <element name="U$28" library="buzzard_labels (25)" package="RST2" value="" x="5.969" y="35.433" smashed="yes"/>
 <element name="U$29" library="buzzard_labels (25)" package="BATT25" value="" x="9.652" y="5.461" smashed="yes" rot="R90"/>
-<element name="U$32" library="buzzard_labels (25)" package="BATT25" value="" x="10.287" y="13.208" rot="R90"/>
+<element name="U$32" library="buzzard_labels (25)" package="BATT25" value="" x="10.414" y="13.208" rot="R90"/>
 <element name="U$36" library="buzzard_labels (25)" package="RST2" value="" x="9.271" y="38.735" rot="MR0"/>
 <element name="U$38" library="buzzard_labels (25)" package="GND0" value="" x="17.399" y="39.37" rot="MR0"/>
 <element name="U$39" library="buzzard_labels (28)" package="ON#OFF0" value="" x="10.414" y="1.905" rot="MR0"/>

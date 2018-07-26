@@ -13719,12 +13719,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="2.54" y="27.94" size="2.54" layer="94" font="vector">PROGRAMMING HEADER</text>
 <wire x1="154.94" y1="91.44" x2="251.46" y2="91.44" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="294.64" y1="218.44" x2="431.8" y2="218.44" width="0.2032" layer="97" style="shortdash"/>
-<text x="337.82" y="134.62" size="2.54" layer="94">Antennae </text>
-<text x="337.82" y="129.54" size="1.778" layer="97">(Default is u.FL)</text>
+<text x="337.82" y="134.62" size="2.54" layer="94">Antenna </text>
 <wire x1="71.12" y1="91.44" x2="71.12" y2="33.02" width="0.2032" layer="97" style="shortdash"/>
 <text x="76.2" y="86.36" size="2.54" layer="94" font="vector">RX/TX LEDs</text>
-<wire x1="365.76" y1="121.92" x2="365.76" y2="130.556" width="0.2032" layer="97" style="shortdash"/>
-<wire x1="365.76" y1="130.556" x2="363.22" y2="130.556" width="0.2032" layer="97" style="shortdash"/>
 <text x="388.62" y="226.06" size="1.778" layer="97" font="vector" rot="R180">Reset occurs when low</text>
 <text x="198.12" y="205.74" size="1.778" layer="97" font="vector">Max Voltage Input: 20VDC</text>
 <text x="198.12" y="203.2" size="1.778" layer="97" font="vector">Max Current Output: 800mA</text>
@@ -14671,13 +14668,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="ANT" class="0">
 <segment>
-<label x="365.76" y="106.68" size="1.27" layer="95" font="vector" rot="R270" xref="yes"/>
 <label x="358.14" y="114.3" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="J13" gate="G$1" pin="SIGNAL"/>
-<wire x1="358.14" y1="114.3" x2="365.76" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="114.3" x2="373.38" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="106.68" x2="365.76" y2="114.3" width="0.1524" layer="91"/>
-<junction x="365.76" y="114.3"/>
+<wire x1="358.14" y1="114.3" x2="373.38" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="ANT"/>

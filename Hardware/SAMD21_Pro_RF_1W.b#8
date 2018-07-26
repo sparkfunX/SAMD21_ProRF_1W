@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -252,6 +252,7 @@ RFM95W</text>
 <wire x1="12.827" y1="4.826" x2="16.51" y2="4.826" width="0.1524" layer="21"/>
 <wire x1="16.51" y1="4.826" x2="16.51" y2="0.254" width="0.1524" layer="21"/>
 <wire x1="16.51" y1="0.254" x2="12.827" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="57.15" y1="35.56" x2="57.15" y2="30.48" width="1.6002" layer="51"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -8603,7 +8604,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$63" library="Labels" package="PWR-()-03" value="" x="35.433" y="31.115" rot="R90"/>
 <element name="U$69" library="buzzard_labels (8)" package="TX3" value="" x="36.576" y="5.334"/>
 <element name="U$70" library="buzzard_labels (8)" package="TX6" value="" x="40.005" y="31.242" rot="R90"/>
-<element name="U$72" library="buzzard_labels (8)" package="RX7" value="" x="38.608" y="31.242" rot="R90"/>
+<element name="U$72" library="buzzard_labels (8)" package="RX7" value="" x="38.481" y="31.242" rot="R90"/>
 <element name="U$73" library="buzzard_labels (8)" package="RX2" value="" x="39.243" y="5.334"/>
 <element name="U$65" library="buzzard_labels (9)" package="CHG1" value="" x="36.957" y="31.242" rot="R90"/>
 <element name="U$55" library="buzzard_labels (25)" package="D514" value="" x="31.623" y="5.334" smashed="yes"/>
@@ -9141,7 +9142,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="31.75" y1="25.4254" x2="33.9344" y2="23.241" width="0.1524" layer="16"/>
 <wire x1="33.9344" y1="23.241" x2="35.941" y2="23.241" width="0.1524" layer="16"/>
 <via x="35.941" y="23.241" extent="1-16" drill="0.381"/>
-<wire x1="35.941" y1="23.241" x2="36.957" y2="24.257" width="0.1524" layer="1"/>
+<wire x1="35.941" y1="23.241" x2="36.83" y2="24.13" width="0.1524" layer="1"/>
+<wire x1="36.83" y1="24.13" x2="36.957" y2="24.257" width="0.1524" layer="1"/>
 <wire x1="36.957" y1="24.257" x2="36.957" y2="25.82" width="0.1524" layer="1"/>
 <wire x1="7.6501" y1="32.07" x2="8.3795" y2="32.07" width="0.1524" layer="1"/>
 <wire x1="8.5725" y1="31.877" x2="8.3795" y2="32.07" width="0.1524" layer="1"/>
@@ -9602,17 +9604,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="ANT">
 <contactref element="U6" pad="P$19"/>
 <contactref element="J13" pad="FEED"/>
-<via x="46.228" y="31.115" extent="1-16" drill="1.397" diameter="1.651"/>
-<wire x1="49.275" y1="31.115" x2="46.228" y2="31.115" width="0.1524" layer="1"/>
 <contactref element="J4" pad="1"/>
 <polygon width="0.1524" layer="1" thermals="no">
 <vertex x="49.784" y="31.623"/>
-<vertex x="49.276" y="31.9278"/>
-<vertex x="45.847" y="31.9278"/>
-<vertex x="45.212" y="31.496"/>
-<vertex x="45.212" y="30.734"/>
-<vertex x="45.847" y="30.2768"/>
-<vertex x="49.276" y="30.2768"/>
+<vertex x="49.276" y="31.8262"/>
+<vertex x="45.7962" y="31.8262" curve="90"/>
+<vertex x="45.085" y="31.115" curve="90"/>
+<vertex x="45.8216" y="30.3784"/>
+<vertex x="45.847" y="30.3784"/>
+<vertex x="49.276" y="30.3784"/>
 <vertex x="49.784" y="30.607"/>
 </polygon>
 <polygon width="0.0508" layer="16" thermals="no">
@@ -9625,11 +9625,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="43.9801" y="36.83" curve="90"/>
 <vertex x="43.18" y="37.6301" curve="90"/>
 </polygon>
+<wire x1="46.228" y1="31.115" x2="49.275" y2="31.115" width="0.1524" layer="1"/>
 <wire x1="40.8382" y1="27.12" x2="42.106" y2="27.12" width="0.1524" layer="16"/>
 <wire x1="42.106" y1="27.12" x2="43.18" y2="28.194" width="0.1524" layer="16"/>
 <wire x1="43.18" y1="28.194" x2="43.18" y2="31.115" width="0.1524" layer="16"/>
 <wire x1="43.18" y1="31.115" x2="43.18" y2="36.83" width="0.1524" layer="16"/>
-<wire x1="46.228" y1="31.115" x2="43.18" y2="31.115" width="1.6002" layer="16"/>
+<wire x1="46.228" y1="31.115" x2="45.593" y2="31.115" width="1.6002" layer="16"/>
+<via x="46.228" y="31.496" extent="1-16" drill="0.381"/>
+<via x="46.228" y="30.734" extent="1-16" drill="0.381"/>
+<wire x1="45.593" y1="31.115" x2="43.18" y2="31.115" width="1.6002" layer="16"/>
+<via x="45.593" y="31.115" extent="1-16" drill="0.381"/>
+<wire x1="46.228" y1="30.734" x2="46.228" y2="31.115" width="0.1524" layer="1"/>
 </signal>
 <signal name="RFM_RST">
 <contactref element="U4" pad="26"/>
@@ -9944,7 +9950,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="40.115975" y1="22.259775" x2="40.115975" y2="25.709025" width="0.1524" layer="1"/>
 <wire x1="40.115975" y1="25.709025" x2="40.005" y2="25.82" width="0.1524" layer="1"/>
 <wire x1="41.021" y1="14.3653" x2="41.021" y2="21.35475" width="0.1524" layer="1"/>
-<wire x1="41.021" y1="21.35475" x2="40.115975" y2="22.259775" width="0.1524" layer="1"/>
+<wire x1="41.021" y1="21.35475" x2="40.712875" y2="21.662875" width="0.1524" layer="1"/>
+<wire x1="40.712875" y1="21.662875" x2="40.115975" y2="22.259775" width="0.1524" layer="1"/>
 </signal>
 <signal name="RX_LED">
 <contactref element="R10" pad="1"/>
@@ -9960,7 +9967,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="39.811175" y1="23.92938125" x2="38.4175" y2="25.32305625" width="0.1524" layer="1"/>
 <wire x1="40.7162" y1="19.3167" x2="40.3352" y2="18.9357" width="0.1524" layer="1"/>
 <via x="40.3352" y="18.9357" extent="1-16" drill="0.381"/>
-<wire x1="39.811175" y1="22.13351875" x2="40.7162" y2="21.22849375" width="0.1524" layer="1"/>
+<wire x1="39.811175" y1="22.13351875" x2="40.497346875" y2="21.447346875" width="0.1524" layer="1"/>
+<wire x1="40.497346875" y1="21.447346875" x2="40.7162" y2="21.22849375" width="0.1524" layer="1"/>
 <wire x1="40.7162" y1="21.22849375" x2="40.7162" y2="19.3167" width="0.1524" layer="1"/>
 <wire x1="39.6875" y1="18.288" x2="40.3352" y2="18.9357" width="0.1524" layer="16"/>
 </signal>

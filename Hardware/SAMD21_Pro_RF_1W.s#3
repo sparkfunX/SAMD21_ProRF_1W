@@ -15167,8 +15167,8 @@ drawing more than 500 mA</text>
 <instance part="Q1" gate="NMOS" x="396.24" y="182.88" rot="R270"/>
 <instance part="R12" gate="G$1" x="388.62" y="187.96" rot="R90"/>
 <instance part="R16" gate="G$1" x="403.86" y="187.96" rot="R90"/>
-<instance part="SUPPLY8" gate="G$1" x="403.86" y="195.58"/>
-<instance part="P+12" gate="G$1" x="388.62" y="195.58"/>
+<instance part="SUPPLY8" gate="G$1" x="403.86" y="198.12"/>
+<instance part="P+12" gate="G$1" x="388.62" y="198.12"/>
 </instances>
 <busses>
 </busses>
@@ -15861,7 +15861,12 @@ drawing more than 500 mA</text>
 <segment>
 <pinref part="P+12" gate="G$1" pin="3.3V"/>
 <pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="388.62" y1="198.12" x2="388.62" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="NMOS" pin="G"/>
 <wire x1="388.62" y1="195.58" x2="388.62" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="187.96" x2="393.7" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="393.7" y1="195.58" x2="388.62" y2="195.58" width="0.1524" layer="91"/>
+<junction x="388.62" y="195.58"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -16317,7 +16322,7 @@ drawing more than 500 mA</text>
 <segment>
 <pinref part="SUPPLY8" gate="G$1" pin="5V"/>
 <pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="403.86" y1="195.58" x2="403.86" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="198.12" x2="403.86" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFM_RXEN" class="0">

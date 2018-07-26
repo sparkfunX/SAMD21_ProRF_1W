@@ -877,23 +877,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <circle x="-1.27" y="0" radius="0.4572" width="0" layer="29"/>
 <circle x="1.27" y="0" radius="0.4572" width="0" layer="29"/>
 </package>
-<package name="0402">
-<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
-<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
-<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1058,39 +1041,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <technology name="">
 <attribute name="PROD_ID" value="RES-07849"/>
 <attribute name="VALUE" value="240"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="470OHM" prefix="R" uservalue="yes">
-<description>&lt;h3&gt;470Ω resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-07869"/>
-<attribute name="VALUE" value="470"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402-1/16W-5%" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-13829" constant="no"/>
-<attribute name="VALUE" value="470" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1298,27 +1248,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <technology name="">
 <attribute name="PROD_ID" value="RES-13768"/>
 <attribute name="VALUE" value="750K"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="787OHM" prefix="R">
-<description>&lt;h3&gt;787Ω resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-11228"/>
-<attribute name="VALUE" value="787"/>
 </technology>
 </technologies>
 </device>
@@ -11547,12 +11476,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="DGND">
-<description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-<text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="SUPPLY">
@@ -11574,20 +11497,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GND" prefix="GND">
-<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
-<gates>
-<gate name="1" symbol="DGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -14807,44 +14716,6 @@ Switches electronic signals</description>
 <text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
-<symbol name="LABELED-PMOS">
-<description>&lt;h3&gt;P-channel MOSFET&lt;/h3&gt;
-Switches electrical signals</description>
-<text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
-<pin name="S" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
-<pin name="D" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-1.9812" y1="0.6858" x2="-1.9812" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.9812" y1="0" x2="-1.9812" y2="-0.8382" width="0.1524" layer="94"/>
-<wire x1="-1.9812" y1="-1.2954" x2="-1.9812" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="-1.9812" y1="-1.905" x2="-1.9812" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.9812" y1="2.54" x2="-1.9812" y2="1.8034" width="0.1524" layer="94"/>
-<wire x1="-1.9812" y1="1.8034" x2="-1.9812" y2="1.0922" width="0.1524" layer="94"/>
-<wire x1="-1.9812" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1.905" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="-1.9812" y1="1.8034" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
-<polygon width="0.1524" layer="94">
-<vertex x="3.302" y="0.508"/>
-<vertex x="2.54" y="-0.762"/>
-<vertex x="1.778" y="0.508"/>
-</polygon>
-<wire x1="1.778" y1="-0.762" x2="1.6002" y2="-0.9398" width="0.1524" layer="94"/>
-<wire x1="3.4798" y1="-0.5842" x2="3.302" y2="-0.762" width="0.1524" layer="94"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-0.1778" y="0"/>
-<vertex x="-0.9398" y="-0.254"/>
-<vertex x="-0.9398" y="0.254"/>
-</polygon>
-<wire x1="0" y1="0" x2="-1.9812" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="-0.7874" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="1.8034" x2="2.54" y2="0.5842" width="0.1524" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DIODE-SCHOTTKY" prefix="D">
@@ -15046,84 +14917,6 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET_PCH" prefix="Q">
-<description>&lt;h3&gt;P-channel MOSFETs&lt;/h3&gt;
-&lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13907”&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13231”&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="LABELED-PMOS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-IRLML2244" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="TRANS-11153"/>
-<attribute name="VALUE" value="4.3A/20V/54mΩ"/>
-</technology>
-</technologies>
-</device>
-<device name="-SI2309DS" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="TRANS-08285"/>
-<attribute name="VALUE" value="1.1A/60V/600mΩ"/>
-</technology>
-</technologies>
-</device>
-<device name="-DMG2307L" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="TRANS-11308"/>
-<attribute name="VALUE" value="2.5A/30V/105mΩ"/>
-</technology>
-</technologies>
-</device>
-<device name="-NDP6020P" package="TO220V">
-<connects>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="TRANS-13060"/>
-<attribute name="VALUE" value="24A/20V/50mΩ"/>
-</technology>
-</technologies>
-</device>
-<device name="-NDS8434" package="SO08">
-<connects>
-<connect gate="G$1" pin="D" pad="5 6 7 8"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S" pad="1 2 3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="TRANS-08355"/>
-<attribute name="VALUE" value="6.5A/20V/35mΩ"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -15227,10 +15020,6 @@ Switches electrical signals</description>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$34" library="SparkX" deviceset="SPARKX-LOGO" device="2"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="U2" library="SparkFun-IC-Power" deviceset="V_REG_LM1117" device="SOT223" value="ADJ3.3"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="787OHM" device="-0603-1/10W-1%" value="787"/>
-<part name="R11" library="SparkFun-Resistors" deviceset="470OHM" device="-0603-1/10W-1%" value="470"/>
-<part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-EIA3216-16V-10%(TANT)" value="10uF"/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
@@ -15269,20 +15058,12 @@ Switches electrical signals</description>
 <part name="R16" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="P+12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="R17" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-AO3404A" value="5.8A/30V/35mΩ"/>
-<part name="GND25" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R18" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-IRLML2244" value="4.3A/20V/54mΩ"/>
 <part name="D3" library="SAMD21_ProRF_1W" deviceset="DIODE-SCHOTTKY" device="-BAT60A" value="3A/10V/300mV"/>
 <part name="D5" library="SAMD21_ProRF_1W" deviceset="DIODE-SCHOTTKY" device="-BAT60A" value="3A/10V/300mV"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="190.5" y="322.58" size="1.778" layer="97" font="vector">Max Voltage Input: 20VDC</text>
-<text x="193.04" y="317.5" size="1.778" layer="97" font="vector">Max Current Output: 800mA</text>
 <text x="161.29" y="167.64" size="1.778" layer="97" font="vector">Solder this jumper if powering
 the board with VUSB and 
 drawing more than 500 mA</text>
@@ -15332,9 +15113,6 @@ drawing more than 500 mA</text>
 <wire x1="327.66" y1="91.44" x2="327.66" y2="144.78" width="0.2032" layer="97" style="shortdash"/>
 <text x="299.72" y="210.82" size="2.54" layer="94" font="vector">Level Shifters</text>
 <text x="160.02" y="256.54" size="1.27" layer="97">VIN 7-15V</text>
-<text x="492.76" y="226.06" size="1.27" layer="97">USB_VCC when barrel present</text>
-<text x="444.5" y="208.28" size="1.27" layer="97">When barrel inserted this goes low,
-otherwise floating and pulled up</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="10.16" y="220.98" rot="R90"/>
@@ -15461,13 +15239,6 @@ otherwise floating and pulled up</text>
 <instance part="GND11" gate="1" x="198.12" y="10.16"/>
 <instance part="U$34" gate="G$1" x="391.16" y="40.64"/>
 <instance part="R3" gate="G$1" x="335.28" y="256.54" rot="R90"/>
-<instance part="U2" gate="G$1" x="241.3" y="327.66" smashed="yes">
-<attribute name="NAME" x="236.22" y="332.74" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="241.3" y="332.74" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="R4" gate="G$1" x="251.46" y="302.26" rot="R90"/>
-<instance part="R11" gate="G$1" x="251.46" y="317.5" rot="R90"/>
-<instance part="GND2" gate="1" x="251.46" y="292.1"/>
 <instance part="C5" gate="G$1" x="274.32" y="254"/>
 <instance part="C7" gate="G$1" x="264.16" y="256.54"/>
 <instance part="GND23" gate="1" x="264.16" y="246.38"/>
@@ -15518,12 +15289,6 @@ otherwise floating and pulled up</text>
 <instance part="R16" gate="G$1" x="403.86" y="187.96" rot="R90"/>
 <instance part="SUPPLY8" gate="G$1" x="403.86" y="198.12"/>
 <instance part="P+12" gate="G$1" x="388.62" y="198.12"/>
-<instance part="SUPPLY5" gate="G$1" x="495.3" y="243.84"/>
-<instance part="R17" gate="G$1" x="480.06" y="233.68" rot="R90"/>
-<instance part="Q3" gate="NMOS" x="487.68" y="218.44"/>
-<instance part="GND25" gate="1" x="490.22" y="208.28" rot="MR0"/>
-<instance part="R18" gate="G$1" x="474.98" y="223.52" rot="R90"/>
-<instance part="Q2" gate="G$1" x="487.68" y="238.76" rot="R90"/>
 <instance part="D3" gate="G$1" x="167.64" y="198.12" rot="R90"/>
 <instance part="D5" gate="G$1" x="254" y="261.62"/>
 </instances>
@@ -15765,11 +15530,6 @@ otherwise floating and pulled up</text>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="251.46" y1="297.18" x2="251.46" y2="294.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="264.16" y1="248.92" x2="264.16" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="-"/>
 <pinref part="GND23" gate="1" pin="GND"/>
@@ -15818,11 +15578,6 @@ otherwise floating and pulled up</text>
 <wire x1="218.44" y1="185.42" x2="215.9" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="185.42" x2="215.9" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="Q3" gate="NMOS" pin="S"/>
-<pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="490.22" y1="213.36" x2="490.22" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -16086,19 +15841,6 @@ otherwise floating and pulled up</text>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="J8" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="482.6" y1="241.3" x2="480.06" y2="241.3" width="0.1524" layer="91"/>
-<label x="472.44" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="480.06" y1="241.3" x2="474.98" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="474.98" y1="241.3" x2="472.44" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="241.3" x2="480.06" y2="238.76" width="0.1524" layer="91"/>
-<junction x="480.06" y="241.3"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="474.98" y1="228.6" x2="474.98" y2="241.3" width="0.1524" layer="91"/>
-<junction x="474.98" y="241.3"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
@@ -16632,18 +16374,6 @@ otherwise floating and pulled up</text>
 <pinref part="J3" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="ADJ"/>
-<wire x1="241.3" y1="320.04" x2="241.3" y2="309.88" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="309.88" x2="251.46" y2="309.88" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="309.88" x2="251.46" y2="312.42" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="307.34" x2="251.46" y2="309.88" width="0.1524" layer="91"/>
-<junction x="251.46" y="309.88"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="ADJ"/>
@@ -16705,12 +16435,6 @@ otherwise floating and pulled up</text>
 <pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="256.54" y1="261.62" x2="264.16" y2="261.62" width="0.1524" layer="91"/>
 <junction x="264.16" y="261.62"/>
-</segment>
-<segment>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<pinref part="SUPPLY5" gate="G$1" pin="5V"/>
-<wire x1="492.76" y1="241.3" x2="495.3" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="495.3" y1="241.3" x2="495.3" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="5V"/>
@@ -16858,18 +16582,6 @@ otherwise floating and pulled up</text>
 <label x="347.98" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$3" class="1">
-<segment>
-<pinref part="U2" gate="G$1" pin="OUT@1"/>
-<pinref part="U2" gate="G$1" pin="OUT"/>
-<wire x1="248.92" y1="327.66" x2="251.46" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="327.66" x2="251.46" y2="325.12" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="325.12" x2="248.92" y2="325.12" width="0.1524" layer="91"/>
-<junction x="251.46" y="325.12"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="322.58" x2="251.46" y2="325.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="J12" gate="G$1" pin="PWR"/>
@@ -16902,27 +16614,6 @@ otherwise floating and pulled up</text>
 <pinref part="D5" gate="G$1" pin="A"/>
 <wire x1="248.92" y1="261.62" x2="251.46" y2="261.62" width="0.1524" layer="91"/>
 <junction x="248.92" y="261.62"/>
-</segment>
-</net>
-<net name="TO_CONN_DETECTOR" class="0">
-<segment>
-<wire x1="490.22" y1="226.06" x2="480.06" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="480.06" y1="226.06" x2="480.06" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="490.22" y1="226.06" x2="490.22" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="NMOS" pin="D"/>
-<pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="490.22" y1="226.06" x2="490.22" y2="233.68" width="0.1524" layer="91"/>
-<junction x="490.22" y="226.06"/>
-</segment>
-<segment>
-<pinref part="Q3" gate="NMOS" pin="G"/>
-<wire x1="482.6" y1="215.9" x2="474.98" y2="215.9" width="0.1524" layer="91"/>
-<label x="469.9" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="474.98" y1="215.9" x2="469.9" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="474.98" y1="218.44" x2="474.98" y2="215.9" width="0.1524" layer="91"/>
-<junction x="474.98" y="215.9"/>
 </segment>
 </net>
 </nets>
