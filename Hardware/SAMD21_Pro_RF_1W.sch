@@ -14841,7 +14841,6 @@ Switches electronic signals</description>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="MINI"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$34" library="SparkX" deviceset="SPARKX-LOGO" device="2"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-EIA3216-16V-10%(TANT)" value="10uF"/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
@@ -14861,7 +14860,6 @@ Switches electronic signals</description>
 <part name="GND35" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="P+7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="J15" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="JS-1MM"/>
 <part name="P+13" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -15059,7 +15057,6 @@ drawing more than 500 mA</text>
 <instance part="LOGO1" gate="G$1" x="365.76" y="45.72"/>
 <instance part="GND11" gate="1" x="198.12" y="10.16"/>
 <instance part="U$34" gate="G$1" x="391.16" y="40.64"/>
-<instance part="R3" gate="G$1" x="335.28" y="256.54" rot="R90"/>
 <instance part="C5" gate="G$1" x="274.32" y="254"/>
 <instance part="C7" gate="G$1" x="264.16" y="256.54"/>
 <instance part="GND23" gate="1" x="264.16" y="246.38"/>
@@ -15085,7 +15082,6 @@ drawing more than 500 mA</text>
 <instance part="GND35" gate="1" x="345.44" y="160.02"/>
 <instance part="SUPPLY4" gate="G$1" x="345.44" y="193.04"/>
 <instance part="P+7" gate="G$1" x="314.96" y="193.04"/>
-<instance part="SUPPLY3" gate="G$1" x="335.28" y="264.16"/>
 <instance part="J15" gate="G$1" x="297.18" y="15.24" rot="MR0"/>
 <instance part="P+13" gate="G$1" x="287.02" y="22.86"/>
 <instance part="GND38" gate="1" x="287.02" y="7.62"/>
@@ -15472,9 +15468,9 @@ drawing more than 500 mA</text>
 <pinref part="U4" gate="G$1" pin="PA18(SER1:2+)_D10"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="A8"/>
-<wire x1="317.5" y1="165.1" x2="312.42" y2="165.1" width="0.1524" layer="91"/>
-<label x="312.42" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="312.42" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="A7"/>
+<wire x1="317.5" y1="167.64" x2="312.42" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -15605,9 +15601,9 @@ drawing more than 500 mA</text>
 <pinref part="U4" gate="G$1" pin="PA16(I2C/SER1:0+)_D11"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="A4"/>
-<wire x1="317.5" y1="180.34" x2="312.42" y2="180.34" width="0.1524" layer="91"/>
-<label x="312.42" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="A8"/>
+<wire x1="317.5" y1="165.1" x2="312.42" y2="165.1" width="0.1524" layer="91"/>
+<label x="312.42" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VBATT_LVL" class="0">
@@ -15968,9 +15964,9 @@ drawing more than 500 mA</text>
 <label x="134.62" y="208.28" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="A7"/>
-<wire x1="317.5" y1="167.64" x2="312.42" y2="167.64" width="0.1524" layer="91"/>
-<label x="312.42" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="312.42" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="A6"/>
+<wire x1="317.5" y1="170.18" x2="312.42" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SHLD" class="0">
@@ -16222,11 +16218,6 @@ drawing more than 500 mA</text>
 <pinref part="SUPPLY4" gate="G$1" pin="5V"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="264.16" x2="335.28" y2="261.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="5V"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="EN"/>
 <wire x1="218.44" y1="190.5" x2="215.9" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="190.5" x2="215.9" y2="195.58" width="0.1524" layer="91"/>
@@ -16271,9 +16262,9 @@ drawing more than 500 mA</text>
 <label x="134.62" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="A6"/>
-<wire x1="317.5" y1="170.18" x2="312.42" y2="170.18" width="0.1524" layer="91"/>
-<label x="312.42" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="312.42" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="A5"/>
+<wire x1="317.5" y1="172.72" x2="312.42" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFM_TXEN" class="0">
@@ -16283,9 +16274,9 @@ drawing more than 500 mA</text>
 <label x="134.62" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="A5"/>
-<wire x1="317.5" y1="172.72" x2="312.42" y2="172.72" width="0.1524" layer="91"/>
-<label x="312.42" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="312.42" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="A4"/>
+<wire x1="317.5" y1="180.34" x2="312.42" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK5V" class="0">
@@ -16296,15 +16287,15 @@ drawing more than 500 mA</text>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="SCK"/>
-<wire x1="337.82" y1="236.22" x2="332.74" y2="236.22" width="0.1524" layer="91"/>
-<label x="332.74" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="337.82" y1="236.22" x2="335.28" y2="236.22" width="0.1524" layer="91"/>
+<label x="335.28" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI5V" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="MOSI"/>
-<wire x1="337.82" y1="241.3" x2="332.74" y2="241.3" width="0.1524" layer="91"/>
-<label x="332.74" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="337.82" y1="241.3" x2="335.28" y2="241.3" width="0.1524" layer="91"/>
+<label x="335.28" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="B3"/>
@@ -16315,8 +16306,8 @@ drawing more than 500 mA</text>
 <net name="MISO5V" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="MISO"/>
-<wire x1="337.82" y1="238.76" x2="332.74" y2="238.76" width="0.1524" layer="91"/>
-<label x="332.74" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="337.82" y1="238.76" x2="335.28" y2="238.76" width="0.1524" layer="91"/>
+<label x="335.28" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="B2"/>
@@ -16327,12 +16318,8 @@ drawing more than 500 mA</text>
 <net name="!RFM_CS5V" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="!NSS"/>
+<label x="335.28" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="337.82" y1="243.84" x2="335.28" y2="243.84" width="0.1524" layer="91"/>
-<label x="332.74" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="335.28" y1="243.84" x2="332.74" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="251.46" x2="335.28" y2="243.84" width="0.1524" layer="91"/>
-<junction x="335.28" y="243.84"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -16346,33 +16333,33 @@ drawing more than 500 mA</text>
 </net>
 <net name="RFM_TXEN5V" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="B5"/>
-<wire x1="342.9" y1="172.72" x2="347.98" y2="172.72" width="0.1524" layer="91"/>
-<label x="347.98" y="172.72" size="1.27" layer="95" xref="yes"/>
+<label x="347.98" y="180.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="B4"/>
+<wire x1="342.9" y1="180.34" x2="347.98" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="TXEN"/>
-<wire x1="337.82" y1="246.38" x2="332.74" y2="246.38" width="0.1524" layer="91"/>
-<label x="332.74" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="337.82" y1="246.38" x2="335.28" y2="246.38" width="0.1524" layer="91"/>
+<label x="335.28" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RFM_RXEN5V" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="B6"/>
-<wire x1="342.9" y1="170.18" x2="347.98" y2="170.18" width="0.1524" layer="91"/>
-<label x="347.98" y="170.18" size="1.27" layer="95" xref="yes"/>
+<label x="347.98" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="B5"/>
+<wire x1="342.9" y1="172.72" x2="347.98" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="RXEN"/>
-<wire x1="337.82" y1="248.92" x2="332.74" y2="248.92" width="0.1524" layer="91"/>
-<label x="332.74" y="248.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="337.82" y1="248.92" x2="335.28" y2="248.92" width="0.1524" layer="91"/>
+<label x="335.28" y="248.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DIO05V" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="B7"/>
-<wire x1="342.9" y1="167.64" x2="347.98" y2="167.64" width="0.1524" layer="91"/>
-<label x="347.98" y="167.64" size="1.27" layer="95" xref="yes"/>
+<label x="347.98" y="170.18" size="1.27" layer="95" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="B6"/>
+<wire x1="342.9" y1="170.18" x2="347.98" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="DIO0"/>
@@ -16382,9 +16369,9 @@ drawing more than 500 mA</text>
 </net>
 <net name="DIO15V" class="0">
 <segment>
-<pinref part="U8" gate="G$1" pin="B8"/>
-<wire x1="342.9" y1="165.1" x2="347.98" y2="165.1" width="0.1524" layer="91"/>
-<label x="347.98" y="165.1" size="1.27" layer="95" xref="yes"/>
+<label x="347.98" y="167.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="B7"/>
+<wire x1="342.9" y1="167.64" x2="347.98" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="DIO1"/>
@@ -16399,9 +16386,9 @@ drawing more than 500 mA</text>
 <label x="368.3" y="238.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U8" gate="G$1" pin="B4"/>
-<wire x1="342.9" y1="180.34" x2="347.98" y2="180.34" width="0.1524" layer="91"/>
-<label x="347.98" y="180.34" size="1.27" layer="95" xref="yes"/>
+<pinref part="U8" gate="G$1" pin="B8"/>
+<wire x1="342.9" y1="165.1" x2="347.98" y2="165.1" width="0.1524" layer="91"/>
+<label x="347.98" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$12" class="1">
