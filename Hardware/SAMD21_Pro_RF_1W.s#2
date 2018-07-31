@@ -7467,7 +7467,6 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <circle x="2.54" y="-1.27" radius="0.61065625" width="0" layer="29"/>
 <text x="-3.048" y="2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-3.048" y="-3.048" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-2.1844" y1="-2.0574" x2="-2.8702" y2="-2.0574" width="0.2032" layer="22"/>
 <text x="-1.905" y="0" size="0.254" layer="51">Programmer This Side</text>
 </package>
 <package name="1X01_LONGPAD">
