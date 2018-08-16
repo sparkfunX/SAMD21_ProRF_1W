@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15870,7 +15870,7 @@ drawing more than 500 mA</text>
 <pinref part="J4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="RFM_RST" class="0">
+<net name="E19_RST" class="0">
 <segment>
 <wire x1="132.08" y1="215.9" x2="134.62" y2="215.9" width="0.1524" layer="91"/>
 <label x="134.62" y="215.9" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -15956,7 +15956,7 @@ drawing more than 500 mA</text>
 <label x="284.48" y="63.5" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="RFM_INT" class="0">
+<net name="E19_INT" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PA20(SER5:2+)_D6"/>
 <wire x1="132.08" y1="208.28" x2="134.62" y2="208.28" width="0.1524" layer="91"/>
@@ -16163,7 +16163,7 @@ drawing more than 500 mA</text>
 <label x="312.42" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="!RFM_CS" class="0">
+<net name="!E19_CS" class="0">
 <segment>
 <wire x1="132.08" y1="210.82" x2="134.62" y2="210.82" width="0.1524" layer="91"/>
 <label x="134.62" y="210.82" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -16254,7 +16254,7 @@ drawing more than 500 mA</text>
 <wire x1="167.64" y1="203.2" x2="167.64" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RFM_RXEN" class="0">
+<net name="E19_RXEN" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PB23(SER5:3+)"/>
 <wire x1="132.08" y1="172.72" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
@@ -16266,7 +16266,7 @@ drawing more than 500 mA</text>
 <wire x1="317.5" y1="172.72" x2="312.42" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RFM_TXEN" class="0">
+<net name="E19_TXEN" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PB22(SER5:2+)"/>
 <wire x1="132.08" y1="175.26" x2="134.62" y2="175.26" width="0.1524" layer="91"/>
@@ -16314,7 +16314,7 @@ drawing more than 500 mA</text>
 <label x="347.98" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!RFM_CS5V" class="0">
+<net name="!E19_CS5V" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="!NSS"/>
 <label x="335.28" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -16330,7 +16330,7 @@ drawing more than 500 mA</text>
 <label x="406.4" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="RFM_TXEN5V" class="0">
+<net name="E19_TXEN5V" class="0">
 <segment>
 <label x="347.98" y="180.34" size="1.27" layer="95" xref="yes"/>
 <pinref part="U8" gate="G$1" pin="B4"/>
@@ -16342,7 +16342,7 @@ drawing more than 500 mA</text>
 <label x="335.28" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="RFM_RXEN5V" class="0">
+<net name="E19_RXEN5V" class="0">
 <segment>
 <label x="347.98" y="172.72" size="1.27" layer="95" xref="yes"/>
 <pinref part="U8" gate="G$1" pin="B5"/>
