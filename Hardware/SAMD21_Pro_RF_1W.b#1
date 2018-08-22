@@ -40,7 +40,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
@@ -245,14 +245,14 @@ RFM95W</text>
 <wire x1="12.827" y1="4.826" x2="16.51" y2="4.826" width="0.1524" layer="21"/>
 <wire x1="16.51" y1="4.826" x2="16.51" y2="0.254" width="0.1524" layer="21"/>
 <wire x1="16.51" y1="0.254" x2="12.827" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="29.083" y1="34.798" x2="7.62" y2="34.798" width="0.1524" layer="22"/>
-<wire x1="7.62" y1="34.798" x2="7.112" y2="34.29" width="0.1524" layer="22" curve="90"/>
-<wire x1="29.083" y1="34.798" x2="29.591" y2="34.29" width="0.1524" layer="22" curve="-90"/>
-<wire x1="29.591" y1="34.29" x2="29.591" y2="33.02" width="0.1524" layer="22"/>
-<wire x1="29.591" y1="33.02" x2="29.083" y2="32.512" width="0.1524" layer="22" curve="-90"/>
-<wire x1="29.083" y1="32.512" x2="7.62" y2="32.512" width="0.1524" layer="22"/>
-<wire x1="7.62" y1="32.512" x2="7.112" y2="33.02" width="0.1524" layer="22" curve="-90"/>
-<wire x1="7.112" y1="33.02" x2="7.112" y2="34.29" width="0.1524" layer="22"/>
+<wire x1="27.559" y1="34.798" x2="49.53" y2="34.798" width="0.1524" layer="22"/>
+<wire x1="27.051" y1="34.29" x2="27.051" y2="33.02" width="0.1524" layer="22"/>
+<wire x1="27.559" y1="32.512" x2="49.784" y2="32.512" width="0.1524" layer="22"/>
+<wire x1="50.292" y1="33.02" x2="50.292" y2="34.163" width="0.1524" layer="22"/>
+<wire x1="50.292" y1="34.163" x2="49.53" y2="34.798" width="0.1524" layer="22" curve="90"/>
+<wire x1="27.559" y1="34.798" x2="27.051" y2="34.29" width="0.1524" layer="22" curve="90"/>
+<wire x1="27.559" y1="32.512" x2="27.051" y2="33.02" width="0.1524" layer="22" curve="-90"/>
+<wire x1="50.292" y1="33.02" x2="49.784" y2="32.512" width="0.1524" layer="22" curve="-90"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -8390,7 +8390,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$29" library="Labels" package="QWIIC-TEXT-04" value="" x="52.451" y="34.671" smashed="yes" rot="R90"/>
 <element name="U$40" library="Labels" package="QWIIC-TEXT-04" value="" x="52.324" y="0.381" smashed="yes" rot="R90"/>
 <element name="U$25" library="buzzard_labels" package="7#15V0" value="" x="15.621" y="10.541" rot="R90"/>
-<element name="U$35" library="buzzard_labels" package="SOLDER_TO_BYPASS_VUSB_FUSE1" value="" x="27.94" y="33.782" rot="MR0"/>
+<element name="U$35" library="buzzard_labels" package="SOLDER_TO_BYPASS_VUSB_FUSE1" value="" x="50.8" y="33.782" rot="MR0"/>
 <element name="U$54" library="Labels" package="QWIIC-TEXT-04" value="" x="50.927" y="39.751" smashed="yes" rot="MR0"/>
 <element name="U$56" library="Labels" package="QWIIC-TEXT-04" value="" x="51.054" y="0.889" smashed="yes" rot="MR0"/>
 </elements>
