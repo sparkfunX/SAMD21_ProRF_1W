@@ -8167,10 +8167,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-07856" x="44.8564" y="11.4935" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" value="1k" x="43.4594" y="12.0015" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="R5" library="SparkFun-Resistors" package="0603" value="2.0k" x="18.415" y="26.035" smashed="yes" rot="R270">
+<element name="R5" library="SparkFun-Resistors" package="0603" value="2.2k" x="18.415" y="26.035" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.177" y="26.924" size="0.4064" layer="25" font="vector" rot="R270"/>
-<attribute name="PROD_ID" value="RES-08296" x="18.415" y="26.035" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="2.0k" x="17.745" y="27.575" size="0.4064" layer="27" font="vector"/>
+<attribute name="PROD_ID" value="RES-08272" x="18.415" y="26.035" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="2.2k" x="17.745" y="27.575" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="R6" library="SparkFun-Resistors" package="0603" value="10k" x="39.243" y="9.271" smashed="yes" rot="R270">
 <attribute name="NAME" x="40.005" y="10.16" size="0.4064" layer="25" font="vector" rot="R270"/>
