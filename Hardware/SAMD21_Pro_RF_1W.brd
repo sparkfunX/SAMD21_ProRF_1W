@@ -40,7 +40,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
@@ -9056,7 +9056,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="31.5849" y1="22.5171" x2="32.2084125" y2="22.5171" width="0.6096" layer="1"/>
 <wire x1="32.2084125" y1="22.5171" x2="32.893" y2="21.8325125" width="0.6096" layer="1"/>
 <wire x1="32.893" y1="21.8325125" x2="32.893" y2="19.05" width="0.6096" layer="1"/>
-<wire x1="32.893" y1="19.05" x2="32.893" y2="13.208" width="0.6096" layer="1"/>
+<wire x1="32.893" y1="19.05" x2="32.893" y2="17.78" width="0.6096" layer="1"/>
+<wire x1="32.893" y1="17.78" x2="32.893" y2="13.208" width="0.6096" layer="1"/>
 <wire x1="39.243" y1="19.05" x2="32.893" y2="19.05" width="0.6096" layer="1"/>
 <via x="28.56675625" y="20.56575625" extent="1-16" drill="0.381"/>
 <wire x1="28.56675625" y1="20.56575625" x2="26.893925" y2="22.2385875" width="0.1524" layer="1"/>
@@ -9367,7 +9368,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="U4" pad="29"/>
 <contactref element="U8" pad="8"/>
 <wire x1="33.036" y1="17.515" x2="33.036" y2="16.8068875" width="0.1524" layer="16"/>
-<wire x1="33.036" y1="16.8068875" x2="32.0787125" y2="15.8496" width="0.1524" layer="16"/>
+<wire x1="33.036" y1="16.8068875" x2="32.87955625" y2="16.65044375" width="0.1524" layer="16"/>
+<wire x1="32.87955625" y1="16.65044375" x2="32.0787125" y2="15.8496" width="0.1524" layer="16"/>
 <wire x1="27.3981" y1="15.040725" x2="28.206975" y2="15.8496" width="0.1524" layer="16"/>
 <wire x1="32.0787125" y1="15.8496" x2="28.206975" y2="15.8496" width="0.1524" layer="16"/>
 <wire x1="27.3981" y1="14.524875" x2="27.5019875" y2="14.4209875" width="0.1524" layer="16"/>
