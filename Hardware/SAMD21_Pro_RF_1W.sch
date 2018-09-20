@@ -14924,13 +14924,14 @@ drawing more than 500 mA</text>
 <wire x1="71.12" y1="91.44" x2="71.12" y2="33.02" width="0.2032" layer="97" style="shortdash"/>
 <text x="76.2" y="86.36" size="2.54" layer="94" font="vector">RX/TX LEDs</text>
 <text x="388.62" y="226.06" size="1.778" layer="97" font="vector" rot="R180">Reset occurs when low</text>
-<text x="218.44" y="274.32" size="1.778" layer="97" font="vector">Max Voltage Input: 20VDC</text>
+<text x="218.44" y="274.32" size="1.778" layer="97" font="vector">Max Voltage Input: 7VDC</text>
 <text x="218.44" y="271.78" size="1.778" layer="97" font="vector">Max Current Output: 800mA</text>
 <wire x1="294.64" y1="144.78" x2="294.64" y2="218.44" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="294.64" y1="218.44" x2="294.64" y2="279.4" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="327.66" y1="91.44" x2="327.66" y2="144.78" width="0.2032" layer="97" style="shortdash"/>
 <text x="299.72" y="210.82" size="2.54" layer="94" font="vector">Level Shifters</text>
 <text x="160.02" y="256.54" size="1.27" layer="97">VIN 7-15V</text>
+<text x="190.5" y="93.98" size="1.778" layer="97" font="vector">Max Voltage Input: 7VDC</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="10.16" y="220.98" rot="R90"/>
