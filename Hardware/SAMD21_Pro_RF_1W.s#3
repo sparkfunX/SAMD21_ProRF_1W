@@ -10900,7 +10900,6 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="R1" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
-<part name="P+1" library="SparkFun-PowerSymbols" deviceset="V_USB" device="" value="USB_VCC"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-YELLOW" device="0603" value="Yellow"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="4.7UF" device="-0603-6.3V-(10%)" value="4.7uF"/>
@@ -11020,6 +11019,7 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND29" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11089,9 +11089,6 @@ GPIOs D2-D4</text>
 <instance part="C3" gate="G$1" x="50.8" y="114.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.816" y="114.427" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="51.816" y="109.601" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="P+1" gate="G$1" x="50.8" y="121.92" smashed="yes">
-<attribute name="VALUE" x="45.466" y="127.508" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="R2" gate="G$1" x="104.14" y="50.8" rot="R90"/>
 <instance part="D1" gate="G$1" x="104.14" y="63.5" smashed="yes">
@@ -11251,6 +11248,7 @@ GPIOs D2-D4</text>
 <instance part="GND18" gate="1" x="238.76" y="15.24"/>
 <instance part="GND28" gate="1" x="287.02" y="7.62"/>
 <instance part="GND29" gate="1" x="287.02" y="50.8"/>
+<instance part="SUPPLY4" gate="G$1" x="50.8" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -11710,11 +11708,6 @@ GPIOs D2-D4</text>
 <label x="48.26" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
 <wire x1="40.64" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="J1" gate="J1" pin="VBUS"/>
-</segment>
-<segment>
-<wire x1="50.8" y1="121.92" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="P+1" gate="G$1" pin="V_USB"/>
 </segment>
 <segment>
 <pinref part="F1" gate="F1" pin="2"/>
@@ -12549,6 +12542,13 @@ GPIOs D2-D4</text>
 <pinref part="U4" gate="G$1" pin="SO(D1)"/>
 <wire x1="276.86" y1="106.68" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
 <label x="269.24" y="106.68" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="V_USB" class="1">
+<segment>
+<wire x1="50.8" y1="121.92" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="SUPPLY4" gate="G$1" pin="V_USB"/>
 </segment>
 </net>
 </nets>

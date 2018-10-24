@@ -9194,9 +9194,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="C10" pad="-"/>
-<contactref element="C11" pad="2"/>
-<contactref element="C13" pad="1"/>
 <polygon width="0.1524" layer="1" isolate="0.1524" rank="2">
 <vertex x="53.34" y="40.64"/>
 <vertex x="0" y="40.64"/>
@@ -9217,13 +9214,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="6.35" y="30.48"/>
 <vertex x="0" y="30.48"/>
 </polygon>
-<wire x1="30.099" y1="25.651" x2="29.16868125" y2="25.651" width="0.6096" layer="1"/>
-<wire x1="29.16868125" y1="25.651" x2="28.88648125" y2="25.3688" width="0.6096" layer="1"/>
-<wire x1="24.70751875" y1="25.3688" x2="24.42531875" y2="25.651" width="0.6096" layer="1"/>
-<wire x1="28.88648125" y1="25.3688" x2="24.70751875" y2="25.3688" width="0.6096" layer="1"/>
-<wire x1="32.131" y1="25.566" x2="30.184" y2="25.566" width="0.6096" layer="1"/>
-<wire x1="30.184" y1="25.566" x2="30.099" y2="25.651" width="0.6096" layer="1"/>
-<wire x1="33.655" y1="25.566" x2="32.131" y2="25.566" width="0.6096" layer="1"/>
 <via x="50.8" y="34.925" extent="1-16" drill="0.381"/>
 <via x="36.576" y="11.43" extent="1-16" drill="0.381"/>
 <via x="32.131" y="14.351" extent="1-16" drill="0.381"/>
@@ -9370,6 +9360,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="42.164" y1="4.445" x2="42.799" y2="5.08" width="0.254" layer="1"/>
 <wire x1="42.799" y1="5.08" x2="46.76" y2="5.08" width="0.254" layer="1"/>
 <contactref element="J11" pad="1"/>
+<contactref element="C10" pad="-"/>
+<wire x1="30.099" y1="25.651" x2="29.16868125" y2="25.651" width="0.6096" layer="1"/>
+<wire x1="29.16868125" y1="25.651" x2="28.88648125" y2="25.3688" width="0.6096" layer="1"/>
+<wire x1="24.70751875" y1="25.3688" x2="24.42531875" y2="25.651" width="0.6096" layer="1"/>
+<wire x1="28.88648125" y1="25.3688" x2="24.70751875" y2="25.3688" width="0.6096" layer="1"/>
+<contactref element="C11" pad="2"/>
+<wire x1="32.131" y1="25.566" x2="30.184" y2="25.566" width="0.6096" layer="1"/>
+<contactref element="C13" pad="1"/>
 <wire x1="49.76" y1="35.56" x2="50.8" y2="34.925" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="39.37" x2="49.76" y2="35.56" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="36.83" x2="20.32" y2="39.37" width="0" layer="19" extent="1-1"/>
@@ -9385,7 +9383,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="23.495" y1="25.651" x2="23.495" y2="26.67" width="0" layer="19" extent="1-1"/>
 <wire x1="23.244" y1="25.4" x2="23.495" y2="25.651" width="0" layer="19" extent="1-1"/>
 <wire x1="24.42531875" y1="25.651" x2="23.495" y2="25.651" width="0" layer="19" extent="1-1"/>
+<wire x1="30.184" y1="25.566" x2="30.099" y2="25.651" width="0" layer="19" extent="1-1"/>
 <wire x1="19.939" y1="25.185" x2="21.4122" y2="25.185" width="0" layer="19" extent="1-1"/>
+<wire x1="33.655" y1="25.566" x2="32.131" y2="25.566" width="0" layer="19" extent="1-1"/>
 <wire x1="16.891" y1="25.185" x2="19.939" y2="25.185" width="0" layer="19" extent="1-1"/>
 <wire x1="15.367" y1="25.185" x2="16.891" y2="25.185" width="0" layer="19" extent="1-1"/>
 <wire x1="11.687" y1="22.225" x2="15.367" y2="25.185" width="0" layer="19" extent="1-1"/>
@@ -9632,7 +9632,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="USB_VCC" class="1">
 <contactref element="J1" pad="VBUS"/>
-<contactref element="C3" pad="2"/>
 <contactref element="C8" pad="1"/>
 <contactref element="J4" pad="2"/>
 <contactref element="F1" pad="2"/>
@@ -9646,7 +9645,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="6.731" y1="30.10241875" x2="6.1028" y2="30.73061875" width="0.6096" layer="16"/>
 <wire x1="6.1028" y1="30.73061875" x2="6.1028" y2="34.544" width="0.6096" layer="16"/>
 <wire x1="6.1028" y1="34.544" x2="6.1028" y2="35.052" width="0.6096" layer="16"/>
-<wire x1="15.24" y1="35.98" x2="15.914" y2="35.306" width="0.6096" layer="1"/>
 <wire x1="15.914" y1="35.306" x2="17.78" y2="35.306" width="0.6096" layer="1"/>
 <wire x1="24.13" y1="35.306" x2="17.78" y2="35.306" width="0.6096" layer="1"/>
 <wire x1="17.78" y1="36.83" x2="17.78" y2="35.306" width="0.6096" layer="1"/>
@@ -9661,12 +9659,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="26.797" y1="33.655" x2="27.9146" y2="33.655" width="0.6096" layer="16"/>
 <via x="6.1028" y="35.052" extent="1-16" drill="0.381"/>
 <wire x1="6.1028" y1="35.052" x2="7.0308" y2="35.98" width="0.6096" layer="1"/>
-<wire x1="7.0308" y1="35.98" x2="15.24" y2="35.98" width="0.6096" layer="1"/>
 <wire x1="24.892" y1="29.591" x2="24.638" y2="29.845" width="0.254" layer="1"/>
 <wire x1="24.638" y1="29.845" x2="19.304" y2="29.845" width="0.254" layer="1"/>
 <wire x1="17.399" y1="29.845" x2="19.304" y2="29.845" width="0.254" layer="1"/>
 <wire x1="16.891" y1="26.885" x2="16.891" y2="29.337" width="0.254" layer="1"/>
 <wire x1="16.891" y1="29.337" x2="17.399" y2="29.845" width="0.254" layer="1"/>
+<wire x1="7.0308" y1="35.98" x2="15.914" y2="35.306" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V" class="1">
 <contactref element="R8" pad="2"/>
@@ -10873,6 +10871,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="24.2316" y1="4.09076875" x2="24.2316" y2="3.32603125" width="0.1524" layer="1"/>
 <wire x1="24.91603125" y1="2.6416" x2="29.3116" y2="2.6416" width="0.1524" layer="1"/>
 <wire x1="18.5674" y1="9.1186" x2="22.7076" y2="4.9784" width="0.1524" layer="1"/>
+</signal>
+<signal name="V_USB" class="1">
+<contactref element="C3" pad="2"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
