@@ -1253,6 +1253,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="2.54" y="27.94" size="1.9304" layer="94">Attribution Share-Alike 4.0 License</text>
 <text x="2.54" y="24.13" size="1.9304" layer="94"> https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
+<text x="23.114" y="11.176" size="2.7432" layer="94" font="vector">&gt;DESIGNER</text>
+<text x="88.9" y="6.604" size="2.7432" layer="94" font="vector">&gt;REV</text>
 </symbol>
 <symbol name="FRAME_LEDGER">
 <description>&lt;h3&gt;Schematic Frame - Ledger&lt;/h3&gt;
@@ -1284,7 +1286,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <devices>
 <device name="" package="CREATIVE_COMMONS">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESIGNER" value="" constant="no"/>
+<attribute name="REV" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4007,6 +4012,59 @@ Breadboard-friendly pins.
 <text x="-1.5748" y="1.9304" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.8288" y="-2.4638" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="SCREWTERMINAL-3.5MM-10">
+<wire x1="-1.75" y1="3.4" x2="33.25" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="33.25" y1="3.4" x2="33.25" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="33.25" y1="-2.8" x2="33.25" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="33.25" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="33.25" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-1.35" x2="-2.25" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.35" x2="-2.25" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="33.25" y1="3.15" x2="33.75" y2="3.15" width="0.2032" layer="51"/>
+<wire x1="33.75" y1="3.15" x2="33.75" y2="2.15" width="0.2032" layer="51"/>
+<wire x1="33.75" y1="2.15" x2="33.25" y2="2.15" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2.032"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.032"/>
+<pad name="3" x="7" y="0" drill="1.2" diameter="2.032"/>
+<pad name="4" x="10.5" y="0" drill="1.2" diameter="2.032"/>
+<pad name="5" x="14" y="0" drill="1.2" diameter="2.032"/>
+<pad name="6" x="17.5" y="0" drill="1.2" diameter="2.032"/>
+<pad name="7" x="21" y="0" drill="1.2" diameter="2.032"/>
+<pad name="8" x="24.5" y="0" drill="1.2" diameter="2.032"/>
+<wire x1="1.016" y1="-1.524" x2="-0.889" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-0.889" y1="-1.524" x2="1.016" y2="-1.524" width="0.2032" layer="22"/>
+<pad name="9" x="28" y="0" drill="1.2" diameter="2.032"/>
+<pad name="10" x="31.5" y="0" drill="1.2" diameter="2.032"/>
+</package>
+<package name="SCREWTERMINAL-3.5MM-9">
+<wire x1="-1.75" y1="3.4" x2="29.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="29.75" y1="3.4" x2="29.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="29.75" y1="-2.8" x2="29.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="29.75" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="29.75" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-1.35" x2="-2.25" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.35" x2="-2.25" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="29.85" y1="3.15" x2="30.35" y2="3.15" width="0.2032" layer="51"/>
+<wire x1="30.35" y1="3.15" x2="30.35" y2="2.15" width="0.2032" layer="51"/>
+<wire x1="30.35" y1="2.15" x2="29.85" y2="2.15" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2.032"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.032"/>
+<pad name="3" x="7" y="0" drill="1.2" diameter="2.032"/>
+<pad name="4" x="10.5" y="0" drill="1.2" diameter="2.032"/>
+<pad name="5" x="14" y="0" drill="1.2" diameter="2.032"/>
+<pad name="6" x="17.5" y="0" drill="1.2" diameter="2.032"/>
+<pad name="7" x="21" y="0" drill="1.2" diameter="2.032"/>
+<pad name="8" x="24.5" y="0" drill="1.2" diameter="2.032"/>
+<wire x1="1.016" y1="-1.524" x2="-0.889" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-0.889" y1="-1.524" x2="1.016" y2="-1.524" width="0.2032" layer="22"/>
+<pad name="9" x="28" y="0" drill="1.2" diameter="2.032"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-5PIN">
@@ -4307,21 +4365,21 @@ Breadboard-friendly pins.
 NOTES ON THE VARIANTS LOCK and LOCK_LONGPADS...
 This footprint was designed to help hold the alignment of a through-hole component (i.e.  6-pin header) while soldering it into place. You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is a perfectly straight line).  This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes.  Because they are alternating, it causes a "brace" to hold the component in place.  0.005 has proven to be the perfect amount of "off-center" position when using our standard breakaway headers. Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice.  Also,if you push a header all the way into place, it is covered up entirely on the bottom side.</description>
 <gates>
-<gate name="G$1" symbol="CONN_10" x="0" y="7.62"/>
+<gate name="J1" symbol="CONN_10" x="0" y="7.62"/>
 </gates>
 <devices>
 <device name="&quot;" package="1X10">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4331,16 +4389,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="2MM" package="1X10-2MM">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4351,16 +4409,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="2MMSMD" package="1X10-2MM-SMD">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4371,16 +4429,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="LOCK" package="1X10_LOCK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4388,16 +4446,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="LOCK_LONGPADS" package="1X10_LOCK_LONGPADS">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4405,16 +4463,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="SMD_COMBO-FEMALE" package="1X10_SMD_COMBINED">
 <connects>
-<connect gate="G$1" pin="1" pad="1A 1B"/>
-<connect gate="G$1" pin="10" pad="10A 10B"/>
-<connect gate="G$1" pin="2" pad="2A 2B"/>
-<connect gate="G$1" pin="3" pad="3A 3B"/>
-<connect gate="G$1" pin="4" pad="4A 4B"/>
-<connect gate="G$1" pin="5" pad="5A 5B"/>
-<connect gate="G$1" pin="6" pad="6A 6B"/>
-<connect gate="G$1" pin="7" pad="7A 7B"/>
-<connect gate="G$1" pin="8" pad="8A 8B"/>
-<connect gate="G$1" pin="9" pad="9A 9B"/>
+<connect gate="J1" pin="1" pad="1A 1B"/>
+<connect gate="J1" pin="10" pad="10A 10B"/>
+<connect gate="J1" pin="2" pad="2A 2B"/>
+<connect gate="J1" pin="3" pad="3A 3B"/>
+<connect gate="J1" pin="4" pad="4A 4B"/>
+<connect gate="J1" pin="5" pad="5A 5B"/>
+<connect gate="J1" pin="6" pad="6A 6B"/>
+<connect gate="J1" pin="7" pad="7A 7B"/>
+<connect gate="J1" pin="8" pad="8A 8B"/>
+<connect gate="J1" pin="9" pad="9A 9B"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4424,16 +4482,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="SMD_MALE" package="1X10_SMD_MALE">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4443,16 +4501,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="NO_SILK_PTH_FEMALE" package="1X10_NO_SILK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4462,16 +4520,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="LOCK_NS" package="1X10_LOCK_NS">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4479,16 +4537,33 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="1.25MM_SMD" package="1X10-1.25MM-SMD">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3.5MM-10" package="SCREWTERMINAL-3.5MM-10">
+<connects>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="10" pad="10"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4803,20 +4878,20 @@ This footprint was designed to help hold the alignment of a through-hole compone
 NOTES ON THE VARIANTS LOCK and LOCK_LONGPADS...
 This footprint was designed to help hold the alignment of a through-hole component (i.e.  6-pin header) while soldering it into place. You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is a perfectly straight line).  This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes.  Because they are alternating, it causes a "brace" to hold the component in place.  0.005 has proven to be the perfect amount of "off-center" position when using our standard breakaway headers. Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice.  Also,if you push a header all the way into place, it is covered up entirely on the bottom side.</description>
 <gates>
-<gate name="G$1" symbol="CONN_09" x="0" y="0"/>
+<gate name="J1" symbol="CONN_09" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="1X09">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4824,15 +4899,15 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="LOCK" package="1X09_LOCK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4840,15 +4915,15 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="LOCK-LONGPADS" package="1X09_LOCK_LONGPADS">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4856,15 +4931,15 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="LONGPADS" package="1X09_LONGPADS">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4872,15 +4947,31 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 <device name="NO_SILK" package="1X09_NO_SILK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3.5MM-9" package="SCREWTERMINAL-3.5MM-9">
+<connects>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+<connect gate="J1" pin="8" pad="8"/>
+<connect gate="J1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6702,7 +6793,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="F1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="13945"/>
+<attribute name="VALUE" value="6V 0.5A"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11100,12 +11194,12 @@ GPIOs D2-D4</text>
 <attribute name="VALUE" x="211.582" y="236.22" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="217.932" y="241.3" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="J6" gate="G$1" x="210.82" y="53.34" rot="R180"/>
-<instance part="J10" gate="G$1" x="251.46" y="25.4" rot="R180"/>
-<instance part="J9" gate="G$1" x="251.46" y="60.96" rot="R180"/>
+<instance part="J6" gate="J1" x="210.82" y="53.34" rot="R180"/>
+<instance part="J10" gate="J1" x="251.46" y="25.4" rot="R180"/>
+<instance part="J9" gate="J1" x="251.46" y="60.96" rot="R180"/>
 <instance part="SUPPLY7" gate="G$1" x="111.76" y="68.58"/>
 <instance part="SUPPLY6" gate="G$1" x="104.14" y="68.58"/>
-<instance part="J7" gate="G$1" x="210.82" y="25.4" rot="R180"/>
+<instance part="J7" gate="J1" x="210.82" y="25.4" rot="R180"/>
 <instance part="J12" gate="G$1" x="297.18" y="38.1" rot="R180"/>
 <instance part="FD3" gate="G$1" x="429.26" y="20.32"/>
 <instance part="FD1" gate="G$1" x="426.72" y="20.32"/>
@@ -11398,7 +11492,7 @@ GPIOs D2-D4</text>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="1"/>
+<pinref part="J7" gate="J1" pin="1"/>
 <wire x1="200.66" y1="35.56" x2="198.12" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="35.56" x2="198.12" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
@@ -11433,16 +11527,16 @@ GPIOs D2-D4</text>
 <wire x1="241.3" y1="40.64" x2="238.76" y2="40.64" width="0.1524" layer="91"/>
 <junction x="238.76" y="40.64"/>
 <wire x1="241.3" y1="43.18" x2="238.76" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="J10" gate="G$1" pin="1"/>
-<pinref part="J10" gate="G$1" pin="2"/>
-<pinref part="J10" gate="G$1" pin="3"/>
-<pinref part="J10" gate="G$1" pin="4"/>
-<pinref part="J10" gate="G$1" pin="5"/>
-<pinref part="J10" gate="G$1" pin="6"/>
-<pinref part="J10" gate="G$1" pin="7"/>
-<pinref part="J10" gate="G$1" pin="8"/>
-<pinref part="J10" gate="G$1" pin="9"/>
-<pinref part="J10" gate="G$1" pin="10"/>
+<pinref part="J10" gate="J1" pin="1"/>
+<pinref part="J10" gate="J1" pin="2"/>
+<pinref part="J10" gate="J1" pin="3"/>
+<pinref part="J10" gate="J1" pin="4"/>
+<pinref part="J10" gate="J1" pin="5"/>
+<pinref part="J10" gate="J1" pin="6"/>
+<pinref part="J10" gate="J1" pin="7"/>
+<pinref part="J10" gate="J1" pin="8"/>
+<pinref part="J10" gate="J1" pin="9"/>
+<pinref part="J10" gate="J1" pin="10"/>
 <wire x1="238.76" y1="71.12" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="68.58" x2="238.76" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="66.04" x2="238.76" y2="63.5" width="0.1524" layer="91"/>
@@ -11469,15 +11563,15 @@ GPIOs D2-D4</text>
 <wire x1="241.3" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
 <junction x="238.76" y="68.58"/>
 <wire x1="241.3" y1="71.12" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="J9" gate="G$1" pin="1"/>
-<pinref part="J9" gate="G$1" pin="2"/>
-<pinref part="J9" gate="G$1" pin="3"/>
-<pinref part="J9" gate="G$1" pin="4"/>
-<pinref part="J9" gate="G$1" pin="5"/>
-<pinref part="J9" gate="G$1" pin="6"/>
-<pinref part="J9" gate="G$1" pin="7"/>
-<pinref part="J9" gate="G$1" pin="8"/>
-<pinref part="J9" gate="G$1" pin="9"/>
+<pinref part="J9" gate="J1" pin="1"/>
+<pinref part="J9" gate="J1" pin="2"/>
+<pinref part="J9" gate="J1" pin="3"/>
+<pinref part="J9" gate="J1" pin="4"/>
+<pinref part="J9" gate="J1" pin="5"/>
+<pinref part="J9" gate="J1" pin="6"/>
+<pinref part="J9" gate="J1" pin="7"/>
+<pinref part="J9" gate="J1" pin="8"/>
+<pinref part="J9" gate="J1" pin="9"/>
 <wire x1="238.76" y1="48.26" x2="238.76" y2="43.18" width="0.1524" layer="91"/>
 <junction x="238.76" y="43.18"/>
 <pinref part="GND18" gate="1" pin="GND"/>
@@ -11517,7 +11611,7 @@ GPIOs D2-D4</text>
 <label x="134.62" y="228.6" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="2"/>
+<pinref part="J7" gate="J1" pin="2"/>
 <wire x1="200.66" y1="33.02" x2="195.58" y2="33.02" width="0.1524" layer="91"/>
 <label x="195.58" y="33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -11531,7 +11625,7 @@ GPIOs D2-D4</text>
 <segment>
 <wire x1="200.66" y1="48.26" x2="198.12" y2="48.26" width="0.1524" layer="91"/>
 <label x="198.12" y="48.26" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="J6" gate="G$1" pin="10"/>
+<pinref part="J6" gate="J1" pin="10"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="231.14" x2="134.62" y2="231.14" width="0.1524" layer="91"/>
@@ -11543,7 +11637,7 @@ GPIOs D2-D4</text>
 <segment>
 <wire x1="200.66" y1="50.8" x2="198.12" y2="50.8" width="0.1524" layer="91"/>
 <label x="198.12" y="50.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="J6" gate="G$1" pin="9"/>
+<pinref part="J6" gate="J1" pin="9"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="233.68" x2="134.62" y2="233.68" width="0.1524" layer="91"/>
@@ -11570,7 +11664,7 @@ GPIOs D2-D4</text>
 <pinref part="U1" gate="G$1" pin="A0_PA02(AIN0/DAC)"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="9"/>
+<pinref part="J7" gate="J1" pin="9"/>
 <wire x1="200.66" y1="15.24" x2="195.58" y2="15.24" width="0.1524" layer="91"/>
 <label x="195.58" y="15.24" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -11582,7 +11676,7 @@ GPIOs D2-D4</text>
 <pinref part="U1" gate="G$1" pin="A1_PB08(AIN2/SER4:0/TC4:0)"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="8"/>
+<pinref part="J7" gate="J1" pin="8"/>
 <wire x1="200.66" y1="17.78" x2="195.58" y2="17.78" width="0.1524" layer="91"/>
 <label x="195.58" y="17.78" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -11594,7 +11688,7 @@ GPIOs D2-D4</text>
 <pinref part="U1" gate="G$1" pin="A2_PB09(AIN3/SER4:1/TC4:1)"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="7"/>
+<pinref part="J7" gate="J1" pin="7"/>
 <wire x1="200.66" y1="20.32" x2="195.58" y2="20.32" width="0.1524" layer="91"/>
 <label x="195.58" y="20.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -11607,7 +11701,7 @@ GPIOs D2-D4</text>
 </segment>
 <segment>
 <wire x1="200.66" y1="22.86" x2="195.58" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="J7" gate="G$1" pin="6"/>
+<pinref part="J7" gate="J1" pin="6"/>
 <label x="195.58" y="22.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -11618,7 +11712,7 @@ GPIOs D2-D4</text>
 <pinref part="U1" gate="G$1" pin="A4_PA05(AIN5/SER0:1/TC0:1)"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="5"/>
+<pinref part="J7" gate="J1" pin="5"/>
 <wire x1="200.66" y1="25.4" x2="195.58" y2="25.4" width="0.1524" layer="91"/>
 <label x="195.58" y="25.4" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -11685,7 +11779,7 @@ GPIOs D2-D4</text>
 <segment>
 <wire x1="200.66" y1="68.58" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
 <label x="198.12" y="68.58" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="J6" gate="G$1" pin="2"/>
+<pinref part="J6" gate="J1" pin="2"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="195.58" x2="256.54" y2="195.58" width="0.1524" layer="91"/>
@@ -11865,7 +11959,7 @@ GPIOs D2-D4</text>
 <segment>
 <wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
 <label x="198.12" y="71.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="J6" gate="G$1" pin="1"/>
+<pinref part="J6" gate="J1" pin="1"/>
 </segment>
 </net>
 <net name="ANT" class="0">
@@ -11887,7 +11981,7 @@ GPIOs D2-D4</text>
 <pinref part="U1" gate="G$1" pin="!RESET!"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="8"/>
+<pinref part="J6" gate="J1" pin="8"/>
 <wire x1="198.12" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
 <label x="198.12" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -12056,7 +12150,7 @@ GPIOs D2-D4</text>
 <label x="134.62" y="220.98" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="7"/>
+<pinref part="J6" gate="J1" pin="7"/>
 <wire x1="198.12" y1="55.88" x2="200.66" y2="55.88" width="0.1524" layer="91"/>
 <label x="198.12" y="55.88" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -12108,7 +12202,7 @@ GPIOs D2-D4</text>
 <label x="134.62" y="180.34" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="3"/>
+<pinref part="J7" gate="J1" pin="3"/>
 <wire x1="200.66" y1="30.48" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
 <label x="195.58" y="30.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -12125,7 +12219,7 @@ GPIOs D2-D4</text>
 <label x="134.62" y="177.8" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="4"/>
+<pinref part="J7" gate="J1" pin="4"/>
 <wire x1="200.66" y1="27.94" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
 <label x="195.58" y="27.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -12160,7 +12254,7 @@ GPIOs D2-D4</text>
 <segment>
 <wire x1="200.66" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
 <label x="198.12" y="66.04" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="J6" gate="G$1" pin="3"/>
+<pinref part="J6" gate="J1" pin="3"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -12451,7 +12545,7 @@ GPIOs D2-D4</text>
 <label x="134.62" y="238.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="4"/>
+<pinref part="J6" gate="J1" pin="4"/>
 <wire x1="200.66" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
 <label x="198.12" y="63.5" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -12468,7 +12562,7 @@ GPIOs D2-D4</text>
 <label x="134.62" y="236.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="5"/>
+<pinref part="J6" gate="J1" pin="5"/>
 <wire x1="200.66" y1="60.96" x2="198.12" y2="60.96" width="0.1524" layer="91"/>
 <label x="198.12" y="60.96" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
@@ -12485,7 +12579,7 @@ GPIOs D2-D4</text>
 <label x="134.62" y="223.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="6"/>
+<pinref part="J6" gate="J1" pin="6"/>
 <wire x1="200.66" y1="58.42" x2="198.12" y2="58.42" width="0.1524" layer="91"/>
 <label x="198.12" y="58.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>

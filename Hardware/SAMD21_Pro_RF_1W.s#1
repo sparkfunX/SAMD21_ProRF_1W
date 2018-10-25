@@ -10994,6 +10994,9 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY25" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
+<part name="SUPPLY26" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
+<part name="SUPPLY27" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11223,6 +11226,9 @@ GPIOs D2-D4</text>
 <instance part="GND19" gate="1" x="246.38" y="180.34"/>
 <instance part="GND21" gate="1" x="256.54" y="180.34"/>
 <instance part="GND23" gate="1" x="266.7" y="180.34"/>
+<instance part="SUPPLY25" gate="G$1" x="45.72" y="68.58"/>
+<instance part="SUPPLY26" gate="G$1" x="187.96" y="195.58"/>
+<instance part="SUPPLY27" gate="G$1" x="190.5" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -11673,35 +11679,6 @@ GPIOs D2-D4</text>
 <pinref part="U6" gate="G$1" pin="A8"/>
 <wire x1="317.5" y1="165.1" x2="312.42" y2="165.1" width="0.1524" layer="91"/>
 <label x="312.42" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="USB_VCC" class="1">
-<segment>
-<wire x1="45.72" y1="63.5" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
-<label x="48.26" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="40.64" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="J1" gate="J1" pin="VBUS"/>
-</segment>
-<segment>
-<pinref part="F1" gate="F1" pin="2"/>
-<wire x1="182.88" y1="193.04" x2="185.42" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="182.88" x2="185.42" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="182.88" x2="185.42" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="193.04" x2="187.96" y2="193.04" width="0.1524" layer="91"/>
-<junction x="185.42" y="193.04"/>
-<label x="187.96" y="193.04" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="172.72" y1="119.38" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="119.38" x2="195.58" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="116.84" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
-<junction x="190.5" y="119.38"/>
-<label x="177.8" y="119.38" size="1.778" layer="95" font="vector"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="J4" gate="G$1" pin="2"/>
-<label x="195.58" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
@@ -12523,6 +12500,33 @@ GPIOs D2-D4</text>
 <wire x1="50.8" y1="121.92" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY4" gate="G$1" pin="V_USB"/>
+</segment>
+<segment>
+<wire x1="45.72" y1="63.5" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="J1" gate="J1" pin="VBUS"/>
+<pinref part="SUPPLY25" gate="G$1" pin="V_USB"/>
+</segment>
+<segment>
+<pinref part="F1" gate="F1" pin="2"/>
+<wire x1="182.88" y1="193.04" x2="185.42" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="182.88" x2="185.42" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="182.88" x2="185.42" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="193.04" x2="187.96" y2="193.04" width="0.1524" layer="91"/>
+<junction x="185.42" y="193.04"/>
+<pinref part="SUPPLY26" gate="G$1" pin="V_USB"/>
+<wire x1="187.96" y1="193.04" x2="187.96" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="172.72" y1="119.38" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="116.84" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
+<label x="177.8" y="119.38" size="1.778" layer="95" font="vector"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="SUPPLY27" gate="G$1" pin="V_USB"/>
+<wire x1="190.5" y1="121.92" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
+<junction x="190.5" y="119.38"/>
 </segment>
 </net>
 </nets>

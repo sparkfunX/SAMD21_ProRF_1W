@@ -7228,6 +7228,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="DGND">
+<description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+<text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="SUPPLY">
@@ -7249,6 +7255,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -10912,8 +10932,6 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="4.7UF" device="-0603-6.3V-(10%)" value="4.7uF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C11" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="C10" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-EIA3216-16V-10%(TANT)" value="10uF"/>
@@ -10921,7 +10939,6 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="R8" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="D6" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
-<part name="GND26" library="SparkFun" deviceset="GND" device=""/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -10974,15 +10991,11 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-EIA3216-16V-10%(TANT)" value="10uF"/>
-<part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND24" library="SparkFun" deviceset="GND" device=""/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
-<part name="GND27" library="SparkFun" deviceset="GND" device=""/>
 <part name="U3" library="SparkFun-IC-Power" deviceset="V_REG_LM1117" device="SOT223" value="ADJ5"/>
 <part name="F1" library="SparkFun-Fuses" deviceset="PPTC" device="_6V500MA" value="6V 0.5A"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="750OHM" device="-0603-1/10W-1%" value="750"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="240OHM" device="-0603-1/10W-1%" value="240"/>
-<part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="U5" library="SparkFun-RF" deviceset="E19-915MS1W" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11001,7 +11014,6 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="FuseBypass"/>
 <part name="U2" library="SparkFun-IC-Power" deviceset="V_REG_AP2112" device="K-3.3V" value="3.3V"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="POWER_JACK" device="SMD" value="5.5x2.1mm Barrel"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-2N7002PW" value="310mA/60V/1.6Ω"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
@@ -11025,6 +11037,14 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <part name="SUPPLY24" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R13" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
+<part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND16" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND24" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11107,8 +11127,6 @@ GPIOs D2-D4</text>
 <instance part="GND3" gate="1" x="43.18" y="45.72"/>
 <instance part="C8" gate="G$1" x="190.5" y="111.76"/>
 <instance part="GND13" gate="1" x="190.5" y="104.14"/>
-<instance part="GND16" gate="1" x="205.74" y="226.06"/>
-<instance part="GND14" gate="1" x="198.12" y="226.06"/>
 <instance part="GND12" gate="1" x="182.88" y="106.68"/>
 <instance part="C11" gate="G$1" x="256.54" y="187.96"/>
 <instance part="C10" gate="G$1" x="246.38" y="190.5"/>
@@ -11116,7 +11134,6 @@ GPIOs D2-D4</text>
 <instance part="GND21" gate="1" x="256.54" y="180.34"/>
 <instance part="R8" gate="G$1" x="279.4" y="187.96" rot="R90"/>
 <instance part="D6" gate="G$1" x="279.4" y="177.8"/>
-<instance part="GND26" gate="1" x="279.4" y="167.64"/>
 <instance part="C13" gate="G$1" x="266.7" y="190.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="267.716" y="190.627" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="267.716" y="186.309" size="1.778" layer="96" font="vector"/>
@@ -11194,13 +11211,10 @@ GPIOs D2-D4</text>
 <instance part="GND15" gate="1" x="198.12" y="10.16"/>
 <instance part="C14" gate="G$1" x="274.32" y="254"/>
 <instance part="C12" gate="G$1" x="264.16" y="256.54"/>
-<instance part="GND22" gate="1" x="264.16" y="246.38"/>
-<instance part="GND24" gate="1" x="274.32" y="246.38"/>
 <instance part="C15" gate="G$1" x="284.48" y="256.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="285.496" y="256.667" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="285.496" y="252.349" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="GND27" gate="1" x="284.48" y="246.38"/>
 <instance part="U3" gate="G$1" x="238.76" y="261.62" smashed="yes">
 <attribute name="NAME" x="233.68" y="266.7" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="238.76" y="266.7" size="1.778" layer="96" font="vector"/>
@@ -11208,7 +11222,6 @@ GPIOs D2-D4</text>
 <instance part="F1" gate="F1" x="175.26" y="193.04"/>
 <instance part="R6" gate="G$1" x="248.92" y="236.22" rot="R90"/>
 <instance part="R5" gate="G$1" x="248.92" y="251.46" rot="R90"/>
-<instance part="GND20" gate="1" x="248.92" y="226.06"/>
 <instance part="SUPPLY13" gate="G$1" x="284.48" y="264.16"/>
 <instance part="U5" gate="G$1" x="330.2" y="248.92"/>
 <instance part="GND30" gate="1" x="314.96" y="233.68"/>
@@ -11227,7 +11240,6 @@ GPIOs D2-D4</text>
 <instance part="JP1" gate="G$1" x="175.26" y="182.88"/>
 <instance part="U2" gate="G$1" x="228.6" y="190.5"/>
 <instance part="SUPPLY10" gate="G$1" x="215.9" y="198.12"/>
-<instance part="GND17" gate="1" x="215.9" y="175.26"/>
 <instance part="J5" gate="G$1" x="170.18" y="259.08" smashed="yes">
 <attribute name="VALUE" x="160.02" y="271.78" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="160.02" y="259.08" size="1.778" layer="95" font="vector"/>
@@ -11256,6 +11268,14 @@ GPIOs D2-D4</text>
 <instance part="SUPPLY24" gate="G$1" x="83.82" y="25.4"/>
 <instance part="R13" gate="G$1" x="271.78" y="73.66" rot="R90"/>
 <instance part="R14" gate="G$1" x="279.4" y="73.66" rot="R90"/>
+<instance part="GND9" gate="1" x="198.12" y="226.06"/>
+<instance part="GND14" gate="1" x="205.74" y="226.06"/>
+<instance part="GND16" gate="1" x="248.92" y="226.06"/>
+<instance part="GND17" gate="1" x="284.48" y="246.38"/>
+<instance part="GND20" gate="1" x="274.32" y="246.38"/>
+<instance part="GND22" gate="1" x="264.16" y="246.38"/>
+<instance part="GND24" gate="1" x="279.4" y="167.64"/>
+<instance part="GND26" gate="1" x="215.9" y="175.26"/>
 </instances>
 <busses>
 </busses>
@@ -11278,26 +11298,6 @@ GPIOs D2-D4</text>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="205.74" y1="228.6" x2="205.74" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="GND16" gate="1" pin="GND"/>
-<pinref part="C9" gate="G$1" pin="-"/>
-</segment>
-<segment>
-<wire x1="172.72" y1="246.38" x2="198.12" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="246.38" x2="198.12" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="261.62" x2="198.12" y2="246.38" width="0.1524" layer="91"/>
-<junction x="198.12" y="246.38"/>
-<pinref part="J5" gate="G$1" pin="GND"/>
-<wire x1="172.72" y1="261.62" x2="175.26" y2="261.62" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="GNDBREAK"/>
-<wire x1="175.26" y1="261.62" x2="198.12" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="264.16" x2="175.26" y2="264.16" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="264.16" x2="175.26" y2="261.62" width="0.1524" layer="91"/>
-<junction x="175.26" y="261.62"/>
-</segment>
-<segment>
 <wire x1="172.72" y1="116.84" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="116.84" x2="182.88" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -11312,11 +11312,6 @@ GPIOs D2-D4</text>
 <wire x1="256.54" y1="182.88" x2="256.54" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="279.4" y1="170.18" x2="279.4" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="D6" gate="G$1" pin="C"/>
-<pinref part="GND26" gate="1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="182.88" x2="266.7" y2="185.42" width="0.1524" layer="91"/>
@@ -11468,26 +11463,6 @@ GPIOs D2-D4</text>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="264.16" y1="248.92" x2="264.16" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="-"/>
-<pinref part="GND22" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="274.32" y1="248.92" x2="274.32" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<pinref part="GND24" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="284.48" y1="248.92" x2="284.48" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-<pinref part="GND27" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="248.92" y1="231.14" x2="248.92" y2="228.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
 <wire x1="320.04" y1="238.76" x2="314.96" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="238.76" x2="314.96" y2="236.22" width="0.1524" layer="91"/>
@@ -11512,12 +11487,6 @@ GPIOs D2-D4</text>
 <pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="218.44" y1="185.42" x2="215.9" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="185.42" x2="215.9" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="149.86" y1="190.5" x2="149.86" y2="193.04" width="0.1524" layer="91"/>
@@ -11535,6 +11504,57 @@ GPIOs D2-D4</text>
 <pinref part="J14" gate="J1" pin="GNDDTCT"/>
 <wire x1="86.36" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
 <junction x="83.82" y="12.7"/>
+</segment>
+<segment>
+<wire x1="172.72" y1="246.38" x2="198.12" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="246.38" x2="198.12" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="261.62" x2="198.12" y2="246.38" width="0.1524" layer="91"/>
+<junction x="198.12" y="246.38"/>
+<pinref part="J5" gate="G$1" pin="GND"/>
+<wire x1="172.72" y1="261.62" x2="175.26" y2="261.62" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="GNDBREAK"/>
+<wire x1="175.26" y1="261.62" x2="198.12" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="264.16" x2="175.26" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="264.16" x2="175.26" y2="261.62" width="0.1524" layer="91"/>
+<junction x="175.26" y="261.62"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="205.74" y1="228.6" x2="205.74" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="-"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="231.14" x2="248.92" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="284.48" y1="248.92" x2="284.48" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="264.16" y1="248.92" x2="264.16" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="-"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="274.32" y1="248.92" x2="274.32" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="279.4" y1="170.18" x2="279.4" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="C"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<wire x1="218.44" y1="185.42" x2="215.9" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="185.42" x2="215.9" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="GND26" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="MISO" class="0">

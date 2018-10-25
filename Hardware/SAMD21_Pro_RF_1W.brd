@@ -8875,7 +8875,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="DIO-09003" x="47.9044" y="8.4455" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" value="Yellow" x="46.2534" y="13.6525" size="0.508" layer="27" ratio="15" rot="R180"/>
 </element>
-<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="-13.97" y="-12.7"/>
+<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="-13.97" y="-12.7">
+<attribute name="DESIGNER" value="" x="-13.97" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="REV" value="" x="-13.97" y="-12.7" size="1.778" layer="27" display="off"/>
+</element>
 <element name="J1" library="SparkFun-Connectors" package="USB-MICROB-PTH-MILL" value="" x="5.207" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.874" y="26.416" size="0.508" layer="25" font="vector" rot="R270"/>
 <attribute name="PROD_ID" value="CONN-13711" x="5.207" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
@@ -9056,7 +9059,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="F1" library="SparkFun-Fuses" package="0805" value="6V 0.5A" x="26.797" y="29.591" smashed="yes" rot="R180">
 <attribute name="NAME" x="26.797" y="28.702" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="26.924" y="31.115" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<attribute name="PROD_ID" value="13945" x="26.797" y="29.591" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" value="6V 0.5A" x="26.924" y="31.115" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="R6" library="SparkFun-Resistors" package="0603" value="750" x="15.367" y="26.035" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.605" y="26.035" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -9176,8 +9180,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$59" library="buzzard_labels" package="D130" value="" x="49.4538" y="9.9568" smashed="yes"/>
 <element name="U$36" library="buzzard_labels" package="OFF#ON1" value="" x="10.541" y="4.699" rot="MR0"/>
 <element name="U$8" library="buzzard_labels" package="SPI2" value="" x="23.495" y="33.909" smashed="yes"/>
-<element name="U$9" library="buzzard_labels" package="MOSI3" value="" x="21.209" y="35.306" smashed="yes"/>
-<element name="U$10" library="buzzard_labels" package="MISO4" value="" x="23.876" y="35.306" smashed="yes"/>
+<element name="U$9" library="buzzard_labels" package="MOSI3" value="" x="23.876" y="35.306" smashed="yes"/>
+<element name="U$10" library="buzzard_labels" package="MISO4" value="" x="21.209" y="35.306" smashed="yes"/>
 <element name="U$39" library="buzzard_labels" package="SCK5" value="" x="26.543" y="35.306" smashed="yes"/>
 <element name="U$2" library="buzzard_labels" package="MISO4" value="" x="28.575" y="5.334" smashed="yes"/>
 <element name="U$18" library="buzzard_labels" package="SCK5" value="" x="26.67" y="5.334" smashed="yes"/>
